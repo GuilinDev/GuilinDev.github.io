@@ -1,0 +1,92 @@
+# Author settings
+name: Guilin Zhang
+title: Software Engineer
+address: Boston, USA
+email: GuilinDev@gmail.com
+github: GuilinDev
+gavatar: /assets/img/avatar.JPG
+workHistory:
+- work4:
+  company: Freelancer Software Developer/U.S. Army Reserve Recruit
+  location: Boston, USA
+  title: Freelancer Software Developer
+  started: 2016
+  duration: (05/2016 - Present)
+  description: Serve as a Dental Specialist in United States Army Reserve.Devloped ERP system for YJ International LLC and MVP for Shoipping.
+
+- work3:
+  company: Kforce, Inc.
+  location: Multiple locations, USA
+  title: Senior Software Engineer Consultant
+  started: 2015
+  duration: (01/2015 - 05/2016)
+  description: Engineered project "3rd Party Auto Fill" for Nationwide Insurance at Des Moines, Iowa, and project "Adjustment Credit Tool" for Rackspace Hosting at San Antonio, Texas.
+
+- work2:
+  company: Viverae, Inc.
+  location: Dallas, Texas
+  title: Software Engineer
+  started: 2013
+  duration: (07/2013 - 12/2014)
+  description: Key member to develop project "Viverae Health Management System" by using Java and JavaScript.
+
+- work1:
+  company: American Airlines, Inc.
+  location: Fort Worth, Texas
+  title: Object-Oriented Programmer Analyst
+  started: 2012
+  duration: (07/2012 - 07/2013)
+  description: Joined to develop project "Upgrade 24 Hours Waitlist" by using JavaEE.
+
+educationHistory:
+- education1:
+  organization: Harrisburg University of Science and Technology, Harrisburg, Pennsylvania
+  degree: Master of Science
+  major: Information Technology Engineering and Management
+  started: 2015
+  duration: (2015 - 2016)
+  description:
+- education1:
+  organization: University of North Texas, Denton, Texas
+  degree: Master of Science
+  major: Computational Biology
+  started: 2010
+  duration: (2010 - 2012)
+  description: Specialized in Electricaal Engineering
+- education1:
+  organization: University of Tulsa, Tulsa, Oklahoma
+  degree: Master of Science
+  major: Biological Science
+  started: 2010
+  duration: (2008 - 2010)
+  description:
+
+languages:
+- language1:
+  name: 中文
+  proficiency: Native
+- language2:
+  name: English
+  proficiency: Fluent
+programmingSkills:
+- Java:
+  name: Java/JavaEE
+  percentage: 80%
+- JavaScript:
+  name: JavaScript
+  percentage: 60%
+- Python:
+  name: Python
+  percentage: 30%
+- PHP:
+  name: PHP
+  percentage: 50%
+- MicroServices:
+  name: MicroServices
+  percentage: 20%
+- Mobile:
+  name: Mobile Development
+  percentage: 30%
+- DevOps:
+  name: DevOps
+  percentage: 30%

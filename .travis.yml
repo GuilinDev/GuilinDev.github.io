@@ -1,9 +1,10 @@
 language: ruby
 rvm:
-- 2.3.3
+- 2.1
 
 install: gem install jekyll
-script: jekyll build
 
-sudo: false
-exclude: [vendor]
+# branch whitelist
+branches:
+  only:
+  - gh-pages     # test the gh-pages branch
