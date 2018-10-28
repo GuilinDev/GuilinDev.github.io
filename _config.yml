@@ -6,6 +6,19 @@ baseurl:
 url: https://guilindev.github.io
 rss_url:
 
+# plugins
+plugins:
+- jekyll-maps
+
+# Google Map
+maps:
+  google:
+    api_key: AIzaSyC95gnfOztfa6b49vntxa7sXBpu3gAPeGU
+
+location:
+  latitude: 42.423810
+  longitude: -71.081860
+
 # build settings
 
 highlight: true
