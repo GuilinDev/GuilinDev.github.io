@@ -1,6 +1,6 @@
 # Site settings
 title: GuilinDev
-description: Guilin's WWW
+description: Guilin's Website
 favicon: /assets/img/avatar.jpg
 baseurl:
 url: https://guilindev.github.io
@@ -8,7 +8,7 @@ rss_url:
 
 # plugins
 plugins:
-- jekyll-maps
+  - jekyll-maps
 
 # Google Map
 maps:
