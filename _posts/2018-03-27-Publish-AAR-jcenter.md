@@ -2,7 +2,7 @@
 layout: post_layout
 title: Android Studio 发布Java项目到Maven/JCenter仓库
 time: 03-27-2018 Tuesday
-location: Boston
+location: Boston, USA
 pulished: true
 excerpt_separator: "##"
 ---

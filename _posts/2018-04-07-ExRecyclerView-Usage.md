@@ -1,8 +1,8 @@
 ---
 layout: post_layout
 title: ExRecyclerView的使用介绍
-time: 2016年04月04日 星期一
-location: 上海
+time: 04-07-2018 Saturday
+location: Boston, USA
 pulished: true
 excerpt_separator: "#"
 ---

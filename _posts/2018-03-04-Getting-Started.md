@@ -2,7 +2,7 @@
 layout: post_layout
 title: Get Started
 time: 03-05-2018 Monday
-location: Boston
+location: Boston, USA
 pulished: true
 excerpt_separator: "```"
 ---

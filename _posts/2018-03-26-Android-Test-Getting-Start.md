@@ -1,30 +1,30 @@
 ---
 layout: post_layout
-title: Android Test 学习基础
-time: 2016年03月26日 星期六
-location: 上海
+title: Android Test Basics
+time: 03-26-2018 Monday
+location: Boston, USA
 pulished: true
 excerpt_separator: "##"
 ---
 
-开发安卓也有很长一段时间了，但是很少用到测试框架， 平时写用都靠打 log 进行调试和测试，
-运行的对不对，异常情况的处理，边界条件的处理，全靠自己的想象，写出来的代码和应用健壮性可想而知！
+I developed Android for a while, but rarely used the test framework, instead generally used log for debugging and testing..
+The right operation, the handling of abnormal conditions, the processing of boundary conditions, all rely on their own imagination, the code and application robustness can be imagined!
 
-所以学习测试框架是很有必要的一件事，虽然在公司可能很少会用到，因为你可能没有时间去写一个测试案例！
-其工作量不亚于实现一个应用功能， 但是我觉得测试是对自己所写代码的一种负责！
+So it is necessary learning  test framework, although it may be rarely used in the company, because you may not have time to write a test case.
+The workload of writing a test case is no less than an application function, but I still think the test is necessary for coding.
 
-## 基础
+## Basics
 
-Android 的测试种类:
+Android tests including:
 
 
-- **Unit Test** (单元测试)
+- **Unit Test** 
   - **JUnit Test**
 
-    这个只能用来测试无关Android平台的功能代码, 只能在本地运行
+    To test functions codes for Android platform, run locally.
   - **Instrumentation Unit Test**
 
-    这种单元测试运行在 Android 系统中, 这些测试可以获取到测试应用的上下文信息，用来测试有 Android API 的代码
+    Unit Tests are run in Android platform, 这些测试可以获取到测试应用的上下文信息，用来测试有 Android API 的代码
 
 
 - **Integration Tests** (集成测试)
@@ -143,7 +143,7 @@ class MainActivityTest : ActivityInstrumentationTestCase2<MainActivity>(MainActi
 }
 ```
 
-然后在菜单里点击 `buid` -> `select build variants`, 在弹出的面板里面，选择`Test Artifact`为 `Android Instrumentation Tests`,
+then click `buid` -> `select build variants`, 在弹出的面板里面，选择`Test Artifact`为 `Android Instrumentation Tests`,
 
 然后再 Project 面板里面，鼠标右击 MainUnitTest.kt, 在弹出的菜单中选择 run MainUnitTest,
 就可以运行MainUnitTest 里面所有的 @Test 声明的方法

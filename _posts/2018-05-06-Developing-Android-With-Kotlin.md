@@ -1,8 +1,8 @@
 ---
 layout: post_layout
 title: 使用 Kotlin 开发 Android
-time: 2016年04月06日 星期三
-location: 上海
+time: 05-06-2018 Saturday
+location: Boston, USA
 pulished: true
 excerpt_separator: "#"
 ---

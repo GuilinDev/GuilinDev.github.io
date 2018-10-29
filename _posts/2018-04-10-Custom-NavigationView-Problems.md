@@ -1,8 +1,8 @@
 ---
 layout: post_layout
 title: 自定义 NavigationView 时StatusBarColor的小问题
-time: 2016年04月10日 星期日
-location: 上海
+time: 04-10-2018 Tuesday
+location: Boston, USA
 pulished: true
 excerpt_separator: "不过"
 ---
