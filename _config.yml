@@ -5,6 +5,7 @@ favicon: /assets/img/avatar.jpg
 baseurl:
 url: https://guilindev.github.io
 rss_url:
+permalink: date
 
 # plugins
 plugins:
