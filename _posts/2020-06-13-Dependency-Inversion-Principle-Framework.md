@@ -1,3 +1,6 @@
+---
+permalink: pretty
+---
 ### Dependency Inversion Priciple框架
 > 以WinSCP举例，说明一个Remote file server client实现依赖反转原则的例子
 为远程文件服务器（FTP，云存储...）实现一个客户端。可能将其视为一组抽象接口：

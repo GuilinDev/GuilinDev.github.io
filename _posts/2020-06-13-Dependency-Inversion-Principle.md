@@ -1,3 +1,6 @@
+---
+permalink: pretty
+---
 ### Dependency Inversion Principle(DIP)的定义
 DIP基本思想很简单但很重要：提供复杂逻辑的高级模块应易于重用，并且不受提供实用程序功能的低级模块的更改的影响。
 为此，需要引入一种抽象，该抽象将高级模块和低级模块彼此分离。
