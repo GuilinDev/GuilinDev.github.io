@@ -1,5 +1,5 @@
 ---
-permalink: pretty
+permalink: Dependency-Inversion-Principle
 ---
 ### Dependency Inversion Principle(DIP)的定义
 DIP基本思想很简单但很重要：提供复杂逻辑的高级模块应易于重用，并且不受提供实用程序功能的低级模块的更改的影响。
