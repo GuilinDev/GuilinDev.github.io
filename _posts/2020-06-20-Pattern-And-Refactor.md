@@ -46,3 +46,102 @@ public enum Singleton {
 
 ### 组合设计模式Composite Pattern
 ![组合模式实现](/assets/img/blogs/2020-06-20/compositePattern.png)
+
+组合模式的主要优点如下：
+
+* 组合模式可以清楚地定义分层次的复杂对象，表示对象的全部或部分层次，它让客户端忽略了层次的差异，方便对整个层次结构进行控制。
+* 客户端可以一致地使用一个组合结构或其中单个对象，不必关心处理的是单个对象还是整个组合结构，简化了客户端代码。
+* 在组合模式中增加新的容器构件和叶子构件都很方便，无须对现有类库进行任何修改，符合“开闭原则”。
+* 组合模式为树形结构的面向对象实现提供了一种灵活的解决方案，通过叶子对象和容器对象的递归组合，可以形成复杂的树形结构，但对树形结构的控制却非常简单。
+
+组合模式的主要缺点如下：
+
+* 使得设计更加复杂，客户端需要花更多时间理清类之间的层次关系。
+* 在增加新构件时很难对容器中的构件类型进行限制。
+
+适用场景：
+* 在具有整体和部分的层次结构中，希望通过一种方式忽略整体与部分的差异，客户端可以一致地对待它们。
+* 在一个使用面向对象语言开发的系统中需要处理一个树形结构。
+* 在一个系统中能够分离出叶子对象和容器对象，而且它们的类型不固定，需要增加一些新的类型。
+
+![组合模式实现](/assets/img/blogs/2020-06-20/compositePatternAWT.png)
+大体设计代码如下
+```java
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.ImageIcon;
+
+
+public class MyFrame extends Frame {
+    public MyFrame(String title) {
+        super(title);
+    }
+
+    public static void main(String[] args) {
+        MyFrame frame = new MyFrame("This is a Window Form");
+
+        /**
+         * 定义顶部Logo
+         */
+        JLabel imgLabel = new JLabel(new ImageIcon("logo.png"));
+        frame.add(imgLabel, BorderLayout.NORTH);
+
+        /**
+         * 定义底部按钮
+         */
+        JPanel buttons = new JPanel();
+        JButton buttonLogin = new JButton("Login");
+        JButton buttonRegister = new JButton("Register");
+        buttons.add(buttonLogin);
+        buttons.add(buttonRegister);
+        frame.add(buttons, BorderLayout.SOUTH);
+
+
+        TextField textField = new TextField("This is an AWT TextField!");
+
+
+        Label labelFrame = new Label("");
+        frame.add(labelFrame, BorderLayout.CENTER);
+
+        /**
+         * 定义一个 Panel，在Panel中添加四个构件，然后再把Panel添加到Frame中去
+         */
+        // 面板
+        Panel panel = new Panel();
+        panel.setBackground(Color.pink);
+        // 用户输入框
+        Label lableUsername = new Label("Username");
+        TextField textFieldUsername = new TextField("", 20);
+        panel.add(lableUsername);
+        panel.add(textFieldUsername);
+        // 密码输入框
+        Label lablePassword = new Label("Password");
+        TextField textFieldPassword = new TextField("", 20);
+        panel.add(lablePassword);
+        panel.add(textFieldPassword);
+        // 记住密码单选框
+        Checkbox chkUsername = new Checkbox("Remember Username");
+        panel.add(chkUsername);
+        // 找回密码链接
+        JLabel hyperlink = new JLabel("Forget Password?");
+        panel.add(hyperlink);
+        // 将panel加入到frame当中
+        frame.add(panel, BorderLayout.CENTER);
+
+        // 设置Frame的属性
+        frame.setSize(500, 300);
+        frame.setBackground(Color.orange);
+        // 设置点击关闭事件
+        frame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+        frame.setVisible(true);
+    }
+}
+```
