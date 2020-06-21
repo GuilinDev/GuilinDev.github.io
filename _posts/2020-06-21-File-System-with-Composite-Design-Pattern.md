@@ -13,7 +13,7 @@ permalink: File-System
 
 由于在软件开发中存在大量的树形结构，因此组合模式是一种使用频率较高的结构型设计模式，Java SE中的AWT和Swing包的设计就基于组合模式。
 
-除此以外，在XML解析、组织结构树处理、文件系统设计等领域，组合模式都得到了广泛应用。
+除此以外，在XML解析、组织结构树处理、Linux文件系统设计等领域，组合模式都得到了广泛应用。
 
 ### 角色
 
@@ -241,7 +241,7 @@ top Folder
 	- 	- 	- code1.java
 	- 	- README.md
 ```
-文件系统类图
+### 文件系统类图
 ![文件系统类图](/assets/img/blogs/2020-06-21/FileSystemClassDiagram.png)
 
 在这里父类 Component 是一个抽象构件类，Folder 类是一个容器构件类，File 是一个叶子构件类，Folder 和 File 继承了 Component，Folder 与 Component 又是聚合关系
