@@ -1,20 +1,25 @@
+https://collegegrad.com/tough-interview-questions
+
 Be Positive and follow STAR methodology:
 > (S) Situation. Describe the situation in which the event took place.
+
 > (T) Task. Describe the task you were asked to complete. If there was a particular problem or issue you were trying to solve, describe that here.
+
 > (A) Action. Explain what action you took to complete the task or solve the problem.
+
 > (R) Results. Explain the result of your actions. For example, if your actions resulted in completing a task, resolving a conflict, improving your company’s sales record, etc., explain this. Try to focus on how your actions resulted in a success for the company.
 
 * 讲一个故事：
 
-提前准备详细的更之前工作相关的故事，可以借鉴这些故事来解释过去如何应对工作挑战。
+    提前准备详细的更之前工作相关的故事，可以借鉴这些故事来解释过去如何应对工作挑战。
 
 * 认识你自己：
 
-了解自己的优点和缺点，然后创建自己针对优缺点响应，来显示如何利用自己的优势来解决问题，以及针对自己的缺点所做的努力。
+    了解自己的优点和缺点，然后创建自己针对优缺点响应，来显示如何利用自己的优势来解决问题，以及针对自己的缺点所做的努力。
 
 * 注重结果：
 
-强调过去所采取行动的积极成果。如果结果好坏参半，可以总结以防止将来再次发生同样的问题。
+    强调过去所采取行动的积极成果。如果结果好坏参半，可以总结以防止将来再次发生同样的问题。
 
 
 #### Problem-Solving相关问题
@@ -35,13 +40,10 @@ Be Positive and follow STAR methodology:
 #### Teamwork/company相关问题
 考察良好的团队合作，协作技能和公司文化契合度。
 > 
-1. Why join this company/why leave current position/What do you know about our company?
-> 开启sell自己模式，事先需要了解公司的详细状况
-```text
-I’m interested in xxx at a high level, but also specifically for what’s being done in the department for this role. 
-My yyy experience has been heavily software focused and my recent background working with zzz directly aligns with xxx’s needs for this role within the xxx Project...
+1. Why join this company/why leave current position/What do you know about our company? （开启sell自己模式，事先需要了解公司的详细状况）
 
-```
+> I’m interested in xxx at a high level, but also specifically for what’s being done in the department for this role. 
+My yyy experience has been heavily software focused and my recent background working with zzz directly aligns with xxx’s needs for this role within the xxx Project...
 
 2. Have you ever dealt with company policy you weren’t in agreement with? How?
 3. Have you gone above and beyond the call of duty? If so, how?
@@ -73,6 +75,8 @@ My yyy experience has been heavily software focused and my recent background wor
 #### Self-Knowledge相关问题
 诚实而略带修饰地介绍自己，HR和招聘经理对应聘者过去的经历会很感兴趣。
 
+1. Tell me about yourself?
+>
 1. Have you been in a situation where you didn’t have enough work to do?
 2. Have you ever made a mistake? How did you handle it?
 3. Did you ever postpone making a decision? Why?
