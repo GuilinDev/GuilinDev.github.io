@@ -55,6 +55,7 @@ permalink: Caching-and-LoadBalancing-Review
 #### 通读Read-Through
 Read-Through与Cache-Aside，非常相似，只是前者并非同时管理数据库和缓存，而是将数据库同步委托给缓存提供给应用程序。Read-Through与Cache-Aside相同点是都在第一次读取时延迟加载数据。
 ![缓存模式Read-Through](/assets/img/blogs/2020-07-04/readThrough.png)
+
 尽管Read-Through和Cache-Aside非常相似，但是它们有两个主要区别：
 
 * 在Cache-Aside中，应用程序负责从数据库中获取数据并填充缓存。在Read-Through中，独立的库或缓存相关程序通常负责上述工作。
