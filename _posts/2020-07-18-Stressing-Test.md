@@ -1,5 +1,5 @@
 ---
-permalink: Performance-Test
+permalink: Stressing-Test
 ---
 > 性能压测的时候，随着并发压力的增加，系统响应时间和吞吐量如何变化，为什么？
 
@@ -52,9 +52,11 @@ RT是一个系统最重要的指标之一，它的数值大小直接反应了系
 2. QPS和RT的真实关系
 
 我们想象的QPS、RT关系如下:
+
 ![](/assets/img/blogs/2020-07-18/qps_rt_1.png)
 
 实际的QPS、RT关系如下:
+
 ![](/assets/img/blogs/2020-07-18/qps_rt_2.png)
 
 3. 最佳线程数量
@@ -68,4 +70,60 @@ RT是一个系统最重要的指标之一，它的数值大小直接反应了系
 
 
 > 写一个 web 性能压测工具，输入参数：URL，请求总次数，并发数。输出参数：平均响应时间，95% 响应时间。用这个测试工具以 10 并发、100 次请求压测 www.baidu.com。
-#### 
+
+压力测试是一种外部测试（即黑盒测试）的形式，它可以在极端负载条件下测试应用程序的弹性，并检查其正确性和稳定性。
+
+这使我们能够在系统开始崩溃和不可靠之前了解系统的容量和硬限制。还正在测试这个级别的错误管理，这使我们可以设计应用程序来管理在这些异常浪涌情况下的正确错误解决方案，从而提高系统的可恢复性。
+
+在进行压力测试时，不仅要测试应用程序，还要测试所有相关的服务，资源和基础结构。资源通常是这些测试期间的瓶颈，应用程序通常会在CPU和内存资源用尽以正常运行时开始崩溃。
+从测试中获得的度量标准使我们能够了解当前资源的限制，从而告知我们何时进行升级，从而提高了成本效率。
+
+如果使用的是Kubernetes之类的高级协调器，那么压力测试是否还允许我们调整自动缩放因子，从而在服务开始复制Pod来容纳额外负载之前定义CPU限制。
+可以使用这样的编排器将提高性价比，使其适应不断增长的需求负载。
+
+#### 与负载测试Load Testing的区别
+“负载测试”经常被与“压力测试”相混淆。负载测试是按照**预期**的设计需求（即实际工作量）模拟负载。
+假设该产品预计每天最多可为5000个用户提供服务，平均RPS（每秒请求数）为150。
+然后，我们将测试系统上给定负载附近的负载，并期望其平稳可靠地运行，这与压力测试一样会使系统承受尽可能多的负载，但不会像压力测试那样让系统宕机。
+
+另一个区别是压力测试的成本也可能更高，这是因为可能会花费大量资源来进行此类破坏系统的测试，因此压力测试通常在较小的时间周期内进行，而负载测试则在较长的时间段内进行以模拟恒定负载。
+
+Python建立Locust终端压测[例子](https://medium.com/happyfresh-fleet-tracker/danny-stress-testing-1146a0619416)
+
+```python
+import time
+import gevent
+
+from websocket import create_connection
+
+from locust import HttpLocust, TaskSet, task
+from locust.events import request_success
+
+class UserTaskSet(TaskSet):
+    @task(1)
+    def index(self):
+        self.client.get("/")
+
+    @task(2)
+    def sent(self):
+        start_at = time.time()
+        ws = create_connection('www.baidu.com')
+        def _receive():
+            while True:
+                res = ws.recv()
+                data = json.loads(res)
+                response_time = int((time.time() - start_at) * 1000)
+                request_success.fire(
+                    request_type='WSS',
+                    name='api/v1/websocket/',
+                    response_time=response_time,
+                    response_length=len(res),
+                )
+        gevent.spawn(_receive)
+
+class CustomerUser(HttpLocust):
+    task_set = UserTaskSet
+    host = "https://www.baidu.com"
+    min_wait = 500
+    max_wait = 1500
+```
