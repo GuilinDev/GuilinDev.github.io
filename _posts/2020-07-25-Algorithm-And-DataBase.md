@@ -17,6 +17,7 @@ permalink: Algorithm-DataBase
     * 另一种情况是在各自的末尾的空节点（没有交叉）处相等。
 * 为什么一定会相等呢，因为两个指针走过的路程相同，是两个链表的长度之和，所以一定会相等。
 * 这个方法的时间复杂度是O(m + n)，分别是链表的长度，空间是O(1)。
+
 ```java
 /**
  * Definition for singly-linked list.
