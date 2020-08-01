@@ -2,17 +2,18 @@
 permalink: JVM-Gabage-Collection
 ---
 
-## JVM垃圾回收
+# JVM垃圾回收
 仅仅从名字上看，垃圾回收看起来是可以从内存中查找和清空垃圾，实际上，垃圾收集会跟踪JVM堆空间中的每个可用对象，并删除未使用的对象。从而达到回收已经分配出去的内存，
 然后可以进行再分配。
 
-### 前置知识Recall
-#### Java SDK
+## 1. 前置知识Recall
+### 1.1 Java SDK
+了解Java SDK的结构
 ![](/assets/img/blogs/2020-08-01/sdk.png)
 如上图所示，最底下的一层就是Java Virtual Machine(JVM)，也就是HotSpot。
 
-#### JVM逻辑内存模型
-##### 从内存设置的角度看
+### 1.2 JVM逻辑内存模型
+#### 1.2.1 从内存设置的角度看
 ![](/assets/img/blogs/2020-08-01/jvmMemory0.png)
 可以分为三个大的类别：堆内存，非堆内存（JDK8以后叫做Metaspace，元空间）和其它。如果再细分一下，如下：
 ![](/assets/img/blogs/2020-08-01/jvmMemory1.png)
@@ -35,17 +36,17 @@ Metaspace 建议不要设置，一般让 JVM 自己启动的时候动态扩容�
 
 从这个角度可以认为 JVM 内存的大小 = 堆 + metaspace + io(运行时产生的大小)。
 
-##### 从线程的角度看JVM内存模型
+#### 1.2.2 从线程的角度看JVM内存模型
 可以把 JVM 内存结构直接分成线程私有内存和共享主内存。这样就可以很好地理解多线程的很多问题如同步锁、lock、validate 关键字，
 以及 ThreadLocal。
 ![](/assets/img/blogs/2020-08-01/jvmMemory4.png)
 
-##### 从JVM运行期的角度看
+#### 1.2.3 从JVM运行期的角度看
 可以分为五大部分：方法区、堆、本地方法栈区、PC 计数器、线程栈。PC 计数器和栈、本地方法栈，是随着当前的线程开始而开始，销毁而销毁的。
 ![](/assets/img/blogs/2020-08-01/jvmMemory5.png)
 ![](/assets/img/blogs/2020-08-01/jvmMemory6.png)
 
-##### 从垃圾回收的角度看
+#### 1.2.4 从垃圾回收的角度看
 ![](/assets/img/blogs/2020-08-01/jvmMemory7.png)
 通过 java/bin/jvisualvm
 ![](/assets/img/blogs/2020-08-01/jvmMemory8.png)
@@ -58,11 +59,11 @@ JVisualVM 可以看得出来：
 
 比如递归就在heap中分配一段内存作为辅助的stack，for循环包括尾递归都是在栈空间里面。
 
-### 垃圾回收简介
+## 2. 垃圾回收简介
 在 java 中，程序员是不需要显示的去释放一个对象的内存的，而是由虚拟机自行执行。在 JVM 中，有一个垃圾回收线程，它是低优先级的，在正常情况下是不会执行的，
 只有在虚拟机空闲或者当前堆内存不足时，才会触发执行，扫描那些没有被任何引用的对象，并将它们添加到要回收的集合中，进行回收。
 
-### Reference Counting引用计数法和可达性分析
+### 2.1 Reference Counting引用计数法和可达性分析
 在 Java 虚拟机的语境下，垃圾指的是死亡的对象所占据的堆空间。这里便涉及了一个关键的问题：如何辨别一个对象是存是亡？
 
 先介绍一种古老的辨别方法：引用计数法（reference counting）。它的做法是为每个对象添加一个引用计数器，用来统计指向该对象的引用个数。一旦某个对象的引用计数器为 0，
@@ -79,12 +80,12 @@ JVisualVM 可以看得出来：
 
 其中GC Roots可以理解为堆外指向堆内的引用
 
-### 垃圾回收优点
+### 2.2 垃圾回收优点
 Java 语言最显著的特点就是引入了垃圾回收机制，它使 java 程序员在编写程序时不再考虑内存管理的问题。 由于有这个垃圾回收机制，java 中的对象不再有“作用域”的概念，
 只有引用的对象才有“作用域”。 垃圾回收机制有效的防止了内存泄露，可以有效的使用可使用的内存。 垃圾回收器通常作为一个单独的低级别的线程运行，
 在不可预知的情况下对内存堆中已经死亡的或很长时间没有用过的对象进行清除和回收。 程序员不能实时的对某个对象或所有对象调用垃圾回收器进行垃圾回收。
 
-### 垃圾回收机制
+### 2.3 垃圾回收机制
 JVM垃圾回收采用的是分代收集算法（Generational Collection），下面根据代（generation）来看收集过程：
 1. 新对象被分配在新生代的Eden区
 ![](/assets/img/blogs/2020-08-01/generationalCollection0.png)
@@ -96,7 +97,7 @@ JVM垃圾回收采用的是分代收集算法（Generational Collection），下
 ![](/assets/img/blogs/2020-08-01/generationalCollection3.png)
 5. 然后循环此过程，当老年代达到一定值的时候触发老年GC
 
-### 垃圾回收算法
+### 2.4 垃圾回收算法
 当上面出发GC的时候，用的算法包括以下几种：
 
 1. Mark-Sweep 标记-清除算法
@@ -129,10 +130,10 @@ JVM垃圾回收采用的是分代收集算法（Generational Collection），下
 然后直接清理掉端边界以外的内存，有点 copy 的意思，但是比 copy 省空间。这种做法也能够解决内存碎片化的问题，并有更高的空间利用率，但代价是压缩算法的性能开销。
 ![](/assets/img/blogs/2020-08-01/gcAlgorithm2.png)
 
-### 收集器GC Implementations
+### 2.5 收集器GC Implementations
 JVM有四种垃圾收集器的实现：
 
-* Serial Garbage Collector
+#### 2.5.1 Serial Garbage Collector
 这是最简单的GC实现，因为它基本上可以在单个线程中工作（单线程阻塞队列）。串行GC实现在运行时会冻结所有应用程序线程。因此，在诸如服务器环境之类的多线程应用程序中最好不要使用。
 
 缺点：
@@ -150,7 +151,7 @@ JVM有四种垃圾收集器的实现：
 java -XX:+UseSerialGC -jar Application.java
 ```
 
-* Parallel Garbage Collector
+#### 2.5.2 Parallel Garbage Collector
 并行的收集器，Parallel Scavenge 收集器的目标是达到一个可控制的吞吐量（Throughput）；
 自适应调节策略也是 Parallel Scavenge 收集器与 ParNew 收集器的一个重要区别。
 其吞吐量（Throughput），即CPU用于运行用户代码的时间与 CPU 总消耗时间的比值，即“吞吐量 = 运行用户代码时间 /（运行用户代码时间 + 垃圾收集时间）”。
@@ -170,16 +171,16 @@ java -XX:+UseSerialGC -jar Application.java
 java -XX:+UseParallelGC -jar Application.java
 ```
 
-* CMS Garbage Collector
+#### 2.5.3 CMS Garbage Collector
 CMS（Concurrent Mark Sweep）收集器是一种以获取最短回收停顿时间为目标的收集器，它非常符合那些集中在互联网站或者 B/S 系统的服务端上的 Java 应用，
 这些应用都非常重视服务的响应速度。从名字上（“Mark Sweep”）就可以看出它是基于“标记-清除”算法实现的。
 
 CMS 收集器工作的整个流程分为以下4个步骤：
 
-    * 初始标记（CMS initial mark）：仅仅只是标记一下 GC Roots 能直接关联到的对象，速度很快，需要“Stop The World”。
-    * 并发标记（CMS concurrent mark）：进行 GC Roots Tracing 的过程，在整个过程中耗时最长。
-    * 重新标记（CMS remark）：为了修正并发标记期间因用户程序继续运作而导致标记产生变动的那一部分对象的标记记录，这个阶段的停顿时间一般会比初始标记阶段稍长一些，但远比并发标记的时间短。此阶段也需要“Stop The World”。
-    * 并发清除（CMS concurrent sweep）。
+1) 初始标记（CMS initial mark）：仅仅只是标记一下 GC Roots 能直接关联到的对象，速度很快，需要“Stop The World”。
+2) 并发标记（CMS concurrent mark）：进行 GC Roots Tracing 的过程，在整个过程中耗时最长。
+3) 重新标记（CMS remark）：为了修正并发标记期间因用户程序继续运作而导致标记产生变动的那一部分对象的标记记录，这个阶段的停顿时间一般会比初始标记阶段稍长一些，但远比并发标记的时间短。此阶段也需要“Stop The World”。
+4) 并发清除（CMS concurrent sweep）。
 
 配置参数： 
 ```text 
@@ -188,7 +189,7 @@ java -XX:+UseParNewGC -jar Application.java
 
 注意： 从Java 9开始，CMS GC已经被标记为不推荐使用了，从Java 14开始则完全移除了。
 
-* G1 Garbage Collector
+#### 2.5.4 G1 Garbage Collector
 G1（Garbage First）GC设计用于在具有大内存空间的多处理器计算机上运行的应用程序。自JDK7 Update 4及更高版本开始。
 
 G1 GC取代CMS GC，因为具有更高的性能效率。
