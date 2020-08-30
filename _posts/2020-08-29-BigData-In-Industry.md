@@ -40,7 +40,7 @@ permalink: BigData-In-Industry
 * Complexity: 由于缺少用于存储数据的标准格式，因此用户生成的数据大多是非结构化且复杂的。传统网络和存储设备没有任何特定格式来存储与高级分析有关的数据。
  数据随人口统计，地理位置，生活方式等而变化。如果未正确过滤数据，则可能会得到无价值的结果。
  
- ![](/assets/img/blogs/2020-08-29/challenge_macro.png)
+ ![](/assets/img/blogs/2020-08-29/challenge_micro.png)
  
  微观层面上，大数据分析通信行业还面临别的挑战： 
  
