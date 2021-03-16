@@ -7,45 +7,38 @@ github: GuilinDev
 gavatar: /assets/img/avatar.JPG
 workHistory:
 - work4:
-  company: Freelancer Software Developer/U.S. Army Reserve Recruit
+  company: Software Engineer
   location: Boston, USA
-  title: Freelancer Software Developer
-  started: 2016
-  duration: (05/2016 - Present)
-  description: Serve as a Dental Specialist in United States Army Reserve.Devloped ERP system for YJ International LLC and MVP for Shoipping.
+  title: Software Engineer
+  started: 2019
+  duration: (02/2019 - Present)
+  description: Worked on core "Klerity" project for cellular network monitoring, to collect terabytes/petabytes big data from network and devices daily, extract real time intelligence for customer experience, performance management and strategic business decision making.
 
-- work3:
+  - work3:
+  company: Freelancer
+  location: Boston, USA
+  title: Freelancer
+  started: 2016
+  duration: (05/2016 - 01/2019)
+  description: Worked as a freelancer
+
+- work2:
   company: Kforce, Inc.
   location: Multiple locations, USA
-  title: Senior Software Engineer Consultant
+  title: Software Engineer Consultant
   started: 2015
   duration: (01/2015 - 05/2016)
   description: Engineered project "3rd Party Auto Fill" for Nationwide Insurance at Des Moines, Iowa, and project "Adjustment Credit Tool" for Rackspace Hosting at San Antonio, Texas.
 
-- work2:
+- work1:
   company: Viverae, Inc.
   location: Dallas, Texas
   title: Software Engineer
-  started: 2013
-  duration: (07/2013 - 12/2014)
+  started: 2012
+  duration: (07/2012 - 12/2014)
   description: Key member to develop project "Viverae Health Management System" by using Java and JavaScript.
 
-- work1:
-  company: American Airlines, Inc.
-  location: Fort Worth, Texas
-  title: Object-Oriented Programmer Analyst
-  started: 2012
-  duration: (07/2012 - 07/2013)
-  description: Joined to develop project "Upgrade 24 Hours Waitlist" by using JavaEE.
-
 educationHistory:
-- education1:
-  organization: Harrisburg University of Science and Technology, Harrisburg, Pennsylvania
-  degree: Master of Science
-  major: Information Technology Engineering and Management
-  started: 2015
-  duration: (2015 - 2016)
-  description:
 - education1:
   organization: University of North Texas, Denton, Texas
   degree: Master of Science
@@ -70,23 +63,23 @@ languages:
   proficiency: Fluent
 programmingSkills:
 - Java:
-  name: Java/JavaEE
+  name: Java
   percentage: 80%
 - JavaScript:
   name: JavaScript
   percentage: 60%
 - Python:
   name: Python
-  percentage: 30%
-- PHP:
-  name: PHP
+  percentage: 60%
+- Kotlin:
+  name: Kotlin
+  percentage: 40%
+- Big Data:
+  name: Big Data
   percentage: 50%
-- MicroServices:
-  name: MicroServices
-  percentage: 20%
 - Mobile:
   name: Mobile Development
   percentage: 30%
-- DevOps:
-  name: DevOps
-  percentage: 30%
+- Cloud:
+  name: Cloud
+  percentage: 60%
