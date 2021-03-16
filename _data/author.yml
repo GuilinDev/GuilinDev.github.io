@@ -6,7 +6,7 @@ email: GuilinDev@gmail.com
 github: GuilinDev
 gavatar: /assets/img/avatar.JPG
 workHistory:
-  - work4:
+- work1:
   company: Software Engineer
   location: Boston, USA
   title: Software Engineer
@@ -14,7 +14,7 @@ workHistory:
   duration: (02/2019 - Present)
   description: Worked on core "Klerity" project for cellular network monitoring, to collect terabytes/petabytes big data from network and devices daily, extract real time intelligence for customer experience, performance management and strategic business decision making.
 
-  - work3:
+- work2:
   company: Freelancer
   location: Boston, USA
   title: Freelancer
@@ -22,7 +22,7 @@ workHistory:
   duration: (05/2016 - 01/2019)
   description: Worked as a freelancer
 
-- work2:
+- work3:
   company: Kforce, Inc.
   location: Multiple locations, USA
   title: Software Engineer Consultant
@@ -30,7 +30,7 @@ workHistory:
   duration: (01/2015 - 05/2016)
   description: Engineered project "3rd Party Auto Fill" for Nationwide Insurance at Des Moines, Iowa, and project "Adjustment Credit Tool" for Rackspace Hosting at San Antonio, Texas.
 
-- work1:
+- work4:
   company: Viverae, Inc.
   location: Dallas, Texas
   title: Software Engineer
@@ -46,7 +46,7 @@ educationHistory:
   started: 2010
   duration: (2010 - 2012)
   description: Specialized in Electrical Engineering
-- education1:
+- education2:
   organization: University of Tulsa, Tulsa, Oklahoma
   degree: Master of Science
   major: Biological Science
