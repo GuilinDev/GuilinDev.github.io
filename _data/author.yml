@@ -6,23 +6,23 @@ email: GuilinDev@gmail.com
 github: GuilinDev
 gavatar: /assets/img/avatar.JPG
 workHistory:
-- work1:
+- work4:
   company: Empirix, Inc.
-  location: Boston, USA
+  location: Billerica, Massachusetts
   title: Software Engineer
   started: 2019
   duration: (02/2019 - Present)
   description: Worked on core "Klerity" project for cellular network monitoring, to collect terabytes/petabytes big data from network and devices daily, extract real time intelligence for customer experience, performance management and strategic business decision making.
 
-- work2:
+- work3:
   company: Freelancer
-  location: Boston, USA
+  location: Malden, Massachusetts
   title: Freelancer
   started: 2016
   duration: (05/2016 - 01/2019)
   description: Communicated with clients to deliver quality software products. Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs.
 
-- work3:
+- work2:
   company: Kforce, Inc.
   location: Multiple locations, USA
   title: Software Engineer Consultant
@@ -30,7 +30,7 @@ workHistory:
   duration: (01/2015 - 05/2016)
   description: Engineered project "3rd Party Auto Fill" for Nationwide Insurance at Des Moines, Iowa, and project "Adjustment Credit Tool" for Rackspace Hosting at San Antonio, Texas.
 
-- work4:
+- work1:
   company: Viverae, Inc.
   location: Dallas, Texas
   title: Software Engineer
