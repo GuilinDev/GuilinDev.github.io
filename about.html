@@ -12,13 +12,11 @@ layout: author_layout
                 <ul class="timeline">
                     {% for summ in site.data.author.summary %}
                         <li class="timeline-inverted">
-                            <!-- <div class="timeline-panel grid-block"> -->
                                 <div class="timeline-body">
                                     {% if summ.description %}
                                         <p>{{ summ.description }}</p>
                                     {% endif %}
                                 </div>
-                            <!-- </div> -->
                         </li>
                     {% endfor %}
                 </ul>

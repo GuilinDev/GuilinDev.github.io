@@ -60,7 +60,7 @@ educationHistory:
 
 languages:
 - language1:
-  name: 中文
+  name: Mandarin 中文
   proficiency: Native
 - language2:
   name: English
@@ -69,11 +69,11 @@ programmingSkills:
 - Java:
   name: Java
   percentage: 80%
-- JavaScript:
-  name: JavaScript
-  percentage: 60%
 - Python:
   name: Python
+  percentage: 60%
+- JavaScript:
+  name: JavaScript
   percentage: 60%
 - Kotlin:
   name: Kotlin
