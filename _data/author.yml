@@ -5,6 +5,10 @@ address: Boston, USA
 email: GuilinDev@gmail.com
 github: GuilinDev
 gavatar: /assets/img/avatar.JPG
+summary:
+- summary1:
+  description: Technically sophisticated Software Engineer armed with extensive hands-on experience in software development, especially in big data/cloud native, as well as technical project management, troubleshooting and facilitating process improvement initiatives. Experienced with core knowledge of software development – from concept through delivery of next-generation applications and customizable solutions. Specialized in thinking outside the box to find unique solutions to difficult software engineering and web development problems.
+
 workHistory:
 - work4:
   company: Empirix, Inc.
