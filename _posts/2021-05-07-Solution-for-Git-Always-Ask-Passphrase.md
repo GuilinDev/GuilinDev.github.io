@@ -8,7 +8,7 @@ permalink: Solution-Git-Push-Always-Ask-Passphrase
 
 ##### Check transport protocol
 
-```shell script
+```text
 git remote -v
 ```
 
@@ -21,7 +21,7 @@ origin https://github.com/guilindev/testRepo.git (push)
 
 ##### Reset to SSH
 
-```shell script
+```text
 git remote rm origin
 git remote add origin git@github.com:username/repository.git
 git push # may need reset head by using  git push --set-upstream origin master
@@ -29,7 +29,7 @@ git push # may need reset head by using  git push --set-upstream origin master
 
 ##### Check transfer protocol again
 
-```shell script
+```text
 git remote -v
 origin git@github.com:guilindev/testRepo.git (fetch)
 origin git@github.com:guilindev/testRepo.git (push)
