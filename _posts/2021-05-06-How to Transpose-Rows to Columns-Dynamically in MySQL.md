@@ -23,13 +23,6 @@ permalink: Dynamically-Transpose-Rows-MySQL
 
 ![](/assets/img/blogs/2021-05-06/expectedResult.png)
 
-+------------+------------+-----------+------------+
-| meeting_id | first_name | last_name | occupation |
-+------------+------------+-----------+------------+
-|      1     |    Alec    |   Johns   |  engineer |
-|      2     |    John    |    Doe    |  engineer |
-+------------+------------+-----------+------------+
-
 因为MySQL中没有built-in的函数进行动态转置的操作，这时候可以用一些额外的脚本程序或者工具来连接MySQL，生成数据结构然后执行行列转换，不过这里介绍手动实现SQL语句来进行数据转换，如下：
 
 ```sql
