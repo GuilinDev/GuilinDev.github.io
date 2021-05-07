@@ -1,5 +1,5 @@
 ---
-permalink:Dynamically-Transpose-Rows-MySQL
+permalink: Dynamically-Transpose-Rows-MySQL
 ---
 
 ### MySQL中如何动态地转置行为列
