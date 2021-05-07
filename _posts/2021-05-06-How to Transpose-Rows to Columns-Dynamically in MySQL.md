@@ -2,7 +2,7 @@
 permalink: Dynamically-Transpose-Rows-MySQL
 ---
 
-## MySQL中如何动态地转置行为列
+## MySQL中如何利用SQL动态地转置行成为列
 有些时候，数据按行存储，但是报表的时候需要按列输出，这时候就需要转置。同时，数据本身存储的行不知道共有多少，这时候需要知道需要多少列，也即是动态转置。MySQL中没有built-in的函数进行动态转置的操作，所以需要使用SQL来完成，以下是如何使用SQL语句在MySQL中动态转置将行转变成列。
 
 ### 创建一个动态数据透视表Dynamical Pivot Table
