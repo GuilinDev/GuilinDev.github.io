@@ -1,4 +1,4 @@
-[![Watch the video](/assets/videos/halo_reach.png)](/assets/videos/halo_reach_victory.mp4)
+[![Watch the video](/assets/videos/halo_reach.jpg)](/assets/videos/halo_reach_victory.mp4)
 <!--<html>-->
 <!--<body>-->
 
