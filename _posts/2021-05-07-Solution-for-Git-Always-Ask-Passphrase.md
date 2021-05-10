@@ -1,8 +1,7 @@
 ---
 permalink: Solution-Git-Push-Always-Ask-Passphrase
----
-
 comments_id: 2
+---
 
 ### Solution for always asking passphrase when git push
 
