@@ -2,6 +2,8 @@
 permalink: Solution-Git-Push-Always-Ask-Passphrase
 ---
 
+comments_id: 2
+
 ### Solution for always asking passphrase when git push
 
 ##### Replace HTTPS with SSH way to do the transfer in the socket
