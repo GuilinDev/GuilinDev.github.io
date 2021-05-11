@@ -1,5 +1,5 @@
 <script>
-const GH_API_URL = 'https://api.github.com/users/guilindev/repos/guilindev.github.com/issues/{{ page.comments_id }}/comments?client_id={{ site.data.settings.gh_api.ci }}&client_secret={{ site.data.settings.gh_api.cs }}';
+const GH_API_URL = 'https://api.github.com/repos/GuilinDev/GuilinDev.github.io/issues/{{ page.comments_id }}/comments?client_id={{ site.data.settings.gh_api.ci }}&client_secret={{ site.data.settings.gh_api.cs }}';
 
 console.log("Outside:");
 console.log("long url: " + GH_API_URL);
