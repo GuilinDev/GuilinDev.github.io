@@ -1,4 +1,5 @@
 ---
+layout: post
 permalink: Solution-Git-Push-Always-Ask-Passphrase
 comments_id: 2
 ---
