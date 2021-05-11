@@ -1,5 +1,7 @@
 <script>
-const GH_API_URL = 'https://api.github.com/repos/guilindev/guilindev.github.com/issues/{{ page.comments_id }}/comments?client_id={{ site.data.settings.gh_api.ci }}&client_secret={{ site.data.settings.gh_api.cs }}';
+// const GH_API_URL = 'https://api.github.com/repos/guilindev/guilindev.github.com/issues/{{ page.comments_id }}/comments?client_id={{ site.data.settings.gh_api.ci }}&client_secret={{ site.data.settings.gh_api.cs }}';
+const GH_API_URL = 'https://api.github.com/repos/aristath/aristath.github.com/issues/2/comments?per_page=100?client_id=4fccfab19c58e5770a45&client_secret=65c52e4d3c576d08257031c7c11c59a58019a6b6';
+
 
 let request = new XMLHttpRequest();
 request.open( 'GET', GH_API_URL, true );
@@ -58,6 +60,6 @@ request.send();
 <div class="github-comments">
 	<h2>Comments</h2>
 	<ul id="gh-comments-list"></ul>
-	<p id="no-comments-found"></p>
+	<p id="no-comments-found">No Comments yet.</p>
 	<p id="leave-a-comment">Comment for this article on <a href="https://github.com/GuilinDev/GuilinDev.github.io/issues/{{ page.comments_id }}">this ticket</a>. Comments appear on this page instantly.</p>
 </div>
