@@ -1,7 +1,15 @@
 <script>
-// const GH_API_URL = 'https://api.github.com/repos/guilindev/guilindev.github.com/issues/{{ page.comments_id }}/comments?client_id={{ site.data.settings.gh_api.ci }}&client_secret={{ site.data.settings.gh_api.cs }}';
-const GH_API_URL = 'https://api.github.com/repos/aristath/aristath.github.com/issues/2/comments?per_page=100?client_id=4fccfab19c58e5770a45&client_secret=65c52e4d3c576d08257031c7c11c59a58019a6b6';
+const GH_API_URL = 'https://api.github.com/repos/guilindev/guilindev.github.com/issues/{{ page.comments_id }}/comments?client_id={{ site.data.settings.gh_api.ci }}&client_secret={{ site.data.settings.gh_api.cs }}';
+// const GH_API_URL = 'https://api.github.com/repos/aristath/aristath.github.com/issues/2/comments?per_page=100?client_id=4fccfab19c58e5770a45&client_secret=65c52e4d3c576d08257031c7c11c59a58019a6b6';
 
+console.log("Outside:");
+console.log("long url: " + GH_API_URL);
+const cli_url = '{{ page.comments_id }}';
+const cli_id = '{{ site.data.settings.gh_api.ci }}';
+const cli_client = '{{ site.data.settings.gh_api.cs }}';
+console.log("cli_url: " + cli_url);
+console.log("cli_id: " + cli_id);
+console.log("cli_client: " + cli_client);
 
 let request = new XMLHttpRequest();
 request.open( 'GET', GH_API_URL, true );
@@ -11,6 +19,7 @@ request.onload = function() {
 	if ( this.status >= 200  ) { // && this.status < 400
 		let response = JSON.parse( this.response );
 		console.log("Inside if: ");
+		console.log(this.response)
 		console.log(response)
 
 		for ( var i = 0; i < response.length; i++ ) {
