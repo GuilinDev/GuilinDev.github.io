@@ -290,6 +290,192 @@ private void testAggregate4() {
 case1: 英文字符串数组的元素全部改为大写。整数数组每个元素 +3
 
 ```java
+private void testMap1() {
+        String[] strArr = {"abcd", "bcdd", "defde", "fTr" };
+        List<String> strList = Arrays.stream(strArr).map(String::toUpperCase).collect(Collectors.toList());
+
+        List<Integer> intList = Arrays.asList(1, 3, 5, 7, 9, 11);
+        List<Integer> intListNew = intList.stream().map(x -> x + 3).collect(Collectors.toList());
+
+        System.out.println("每个元素大写：" + strList);
+        System.out.println("每个元素+3：" + intListNew);
+    }
+```
+
+打印结果
+
+```text
+每个元素大写：[ABCD, BCDD, DEFDE, FTR]
+每个元素+3：[4, 6, 8, 10, 12, 14]
+```
+
+case2: 将员工的薪资全部增加1000
+
+```java
+private void testMap2() {
+        List<Person> personList = new ArrayList<Person>();
+        personList.add(new Person("Tom", 8900, 23, "male", "New York"));
+        personList.add(new Person("Jack", 7000, 25, "male", "Washington"));
+        personList.add(new Person("Lily", 7800, 21, "female", "Washington"));
+        personList.add(new Person("Anni", 8200, 24, "female", "New York"));
+        personList.add(new Person("Owen", 9500, 25, "male", "New York"));
+        personList.add(new Person("Alisa", 7900, 26, "female", "New York"));
+
+        // 不改变原来员工集合
+        List<Person> personListNew = personList.stream().map(person -> {
+            Person personNew = new Person(person.getName(), 0, 0, null, null);
+            personNew.setSalary(person.getSalary() + 1000);
+            return personNew;
+        }).collect(Collectors.toList());
+
+        System.out.println("一次改动前：" + personList.get(0).getName() + "-->" + personList.get(0).getSalary());
+        System.out.println("一次改动后：" + personListNew.get(0).getName() + "-->" + personListNew.get(0).getSalary());
+
+        // 改变原来员工集合
+        List<Person> personListNew2 = personList.stream().peek(person -> // 这里peek可以代替，并且不用return
+                person.setSalary(person.getSalary() + 1000)
+        ).collect(Collectors.toList());
+
+        System.out.println("二次改动前：" + personList.get(0).getName() + "-->" + personListNew.get(0).getSalary());
+        System.out.println("二次改动后：" + personListNew2.get(0).getName() + "-->" + personListNew.get(0).getSalary());
+    }
+```
+
+打印结果
+
+```text
+一次改动前：Tom-->8900
+一次改动后：Tom-->9900
+二次改动前：Tom-->9900
+二次改动后：Tom-->9900
+```
+
+case3: 将两个字符数组合并成一个新的字符数组
+
+```java
+private void testFlatmap() {
+        List<String> list = Arrays.asList("m,k,l,a", "1,3,5,7");
+
+        List<String> listNew = list.stream().flatMap(s -> {
+            // 将原先列表中的每个元素都转换成一个stream
+            String[] split = s.split(",");
+            Stream<String> s2 = Arrays.stream(split);
+            return s2;
+        }).collect(Collectors.toList());
+
+        System.out.println("处理前的集合：" + list);
+        System.out.println("处理后的集合：" + listNew);
+    }
+```
+
+打印结果
+
+```text
+处理前的集合：[m,k,l,a, 1,3,5,7]
+处理后的集合：[m, k, l, a, 1, 3, 5, 7]
+```
+
+#### 3.5 归约(reduce)
+
+归约，也称缩减，是把一个流缩减成一个值，能实现对集合求和、求乘积和求最值操作。
+
+
+case1: 求Integer集合的元素之和、乘积和最大值
+
+```java
+private void testReduce1() {
+        List<Integer> list = Arrays.asList(1, 3, 2, 8, 11, 4);
+
+        // 求和方式1
+        Optional<Integer> sum1 = list.stream().reduce((x, y) -> x + y);
+        // 求和方式2
+        Optional<Integer> sum2 = list.stream().reduce(Integer::sum);
+        // 求和方式3
+        Integer sum3 = list.stream().reduce(0, Integer::sum);
+
+        // 求乘积
+        Optional<Integer> product = list.stream().reduce((x, y) -> x * y);
+
+        // 求最大值方式1
+        Optional<Integer> max1 = list.stream().reduce((x, y) -> x > y ? x : y); //类似选择排序
+        // 求最大值写法2
+        Integer max2 = list.stream().reduce(1, Integer::max);
+
+        System.out.println("list求和：" + sum1.get() + "," + sum2.get() + "," + sum3);
+        System.out.println("list求积：" + product.get());
+        System.out.println("list求和：" + max1.get() + "," + max2);
+    }
+```
+
+打印结果
+
+```text
+list求和：29,29,29
+list求积：2112
+list求和：11,11
+```
+
+case1: 求所有员工的工资之和以及最高工资
+
+```java
+
+```
+
+打印结果
+
+```text
+
+```
+
+
+
+
+```java
+
+```
+
+打印结果
+
+```text
+
+```
+
+
+
+```java
+
+```
+
+打印结果
+
+```text
+
+```
+
+
+```java
+
+```
+
+打印结果
+
+```text
+
+```
+
+
+```java
+
+```
+
+打印结果
+
+```text
+
+```
+
+
+```java
 
 ```
 
