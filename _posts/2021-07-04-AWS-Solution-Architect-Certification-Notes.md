@@ -13,7 +13,7 @@ permalink: AWS-Solution-Architect-Certification-Notes
 
 
 ## Compute
-### Amazon EC2
+### [Amazon EC2](https://digitalcloud.training/certification-training/aws-solutions-architect-associate/compute/amazon-ec2/)
 
     * each virtual is known as "instance"
     * limited to running up to a tatal of 20 on-demand instances acroos the instance family, purchasing 20 reserved instances
@@ -27,14 +27,79 @@ permalink: AWS-Solution-Architect-Certification-Notes
             * Scheduled：适用于predicatable recurring的任务
             * Convertible： 
 
-    ![](/assets/img/blogs/2021-07-04/1_StandardConvertible.png)
+   ![](/assets/img/blogs/2021-07-04/1_StandardConvertible.png)
 
     EC2的三种Pricing models
 
-    ![](/assets/img/blogs/2021-07-04/2_3PricingModels.png)
+   ![](/assets/img/blogs/2021-07-04/2_ThreePricingModels.png)
 
+    Dedicated Hosts vs Dedicated Instances
+    
+   ![](/assets/img/blogs/2021-07-04/3_DedicatedHostsinstances.png)
+   
+   Instance的类型，根据CPU/Memory/storage/networking capacity/各种flexibility来选择和区分
+   
+   ![](/assets/img/blogs/2021-07-04/4_InstanceTypes.png)
+   
+   Launching Instances
+   
+    * basic monitoring - 5 mins, changeable
+    * can be shared or dedicated
+  
+   Amazon Machine Images(AMI)
+   
+    * launching are regional, can copy to other regions
+    * Volumns attached instance: 
+        * Elastic Block Store - persistent持久化存储，存储依赖于S3
+        * instance store - ephemeral短暂存储，instance关闭则丢失数据，下次再用S3上的template创建
+        
+   Networking
+   networking limits (per region or as specified)
+   ![](/assets/img/blogs/2021-07-04/5_EC2Networking.png)
+   
+   IP Address
+   
+    * Public: instance启动和停止都会重新分配 in public subnets (VPC)
+    * Private: 自动assign
+    * Elastic IP: static IP，每个account最多5个IP per region by default
+    * You can attach a network interface to an instance in a different subnet as long as its within the same AZ.
+    
+   ![](/assets/img/blogs/2021-07-04/6_IPs.png)
+   
+   Elastic Network Interfaces(ENI)
+   
+    * a logical networking component in a VPC that represents a virtural network card
+    
+   Enhanced Networking - Elastic network Adapter (ENA)
+   
+    * 增强网络由ENA具体实现，提供更高的带宽，更高的higher Packet-per-second每秒包数 performance
+    * 目前AWS用的SR-IOV来实现增强网络
+    * in VPC, only in certain instances, must launch HVM AMI with适当drivers
+    
+   Elastic Fabric Adapter (EFA)
+   
+    * 是上面ENA的基础上多了些能力
+    * can handle IP traffic like ENA, also supports important access model commonly 称为 OS bypass
+    * 通过EFA，HPC的应用并搭载Message passing Interface (MPI) and Machine Learning 可将NVIDIA Collective Communications Library (NCCL)可以scale up到数千个CPU或GPU
+    * 作为EC2上的optional networking没有额外cost
+    
+   ENI vs ENA vs EFA
+   
+    * 使用ENI的时候： 这个是基础adapter type，无需HPC的时候使用，适用所有的instance types
+    * 使用ENA的时候： 需要higher带宽和lower inter-instance延迟的时候，只支持HVM类型的instances
+    * 使用EFA的时候： HPC w/ MPI和ML的时候，各个apps之间耦合比较多，适用于所有类型的instance types
+    
+   Placement Groups
+   
+    * 是个逻辑概念：
+        * Cluster
+        * Spread
+        * Partition
+   
+   Identity and access Management(IAM) Roles
+   
 
-### Amazon Elastic Container Service (ECS)
+### [Amazon Elastic Container Service (ECS)]()
 
 ### Amazon Elastic Container Service (ECS)
 
