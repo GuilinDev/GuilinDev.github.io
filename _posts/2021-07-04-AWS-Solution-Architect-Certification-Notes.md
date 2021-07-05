@@ -12,6 +12,7 @@ permalink: AWS-Solution-Architect-Certification-Notes
 
 ### Compute
 #### Amazon EC2
+
     * each virtual is known as "instance"
     * limited to running up to a tatal of 20 on-demand instances acroos the instance family, purchasing 20 reserved instances
     * public key/private key for securely connection
@@ -29,3 +30,7 @@ permalink: AWS-Solution-Architect-Certification-Notes
     EC2的三种Pricing models
 
     ![](/assets/img/blogs/2021-07-04/1_StandardConvertible.png)
+
+
+#### Amazon Elastic Container Service (ECS)
+
