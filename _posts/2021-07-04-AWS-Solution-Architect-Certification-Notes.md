@@ -2,18 +2,17 @@
 layout: post
 permalink: AWS-Solution-Architect-Certification-Notes
 ---
+## 0 Introduction
+![](/assets/img/blogs/2021-07-04/000_Domain.png)
+
 [Exam Introduction](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
 
 [考试大纲](https://d1.awsstatic.com/zh_CN/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf)
 
 [考试样题](https://d1.awsstatic.com/zh_CN/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Sample-Questions.pdf)
 
-## Introduction
-![](/assets/img/blogs/2021-07-04/0_Domain.png)
-
-
-## Compute
-### [Amazon EC2](https://digitalcloud.training/certification-training/aws-solutions-architect-associate/compute/amazon-ec2/)
+## 1 Compute
+### 1.1 [Amazon EC2](https://digitalcloud.training/certification-training/aws-solutions-architect-associate/compute/amazon-ec2/)
 
    * each virtual is known as "instance"
    * limited to running up to a tatal of 20 on-demand instances acroos the instance family, purchasing 20 reserved instances
@@ -27,19 +26,19 @@ permalink: AWS-Solution-Architect-Certification-Notes
             * Scheduled：适用于predicatable recurring的任务
             * Convertible： 
 
-   ![](/assets/img/blogs/2021-07-04/1_StandardConvertible.png)
+   ![](/assets/img/blogs/2021-07-04/001_StandardConvertible.png)
 
     EC2的三种Pricing models
 
-   ![](/assets/img/blogs/2021-07-04/2_ThreePricingModels.png)
+   ![](/assets/img/blogs/2021-07-04/002_ThreePricingModels.png)
 
     Dedicated Hosts vs Dedicated Instances
     
-   ![](/assets/img/blogs/2021-07-04/3_DedicatedHostsinstances.png)
+   ![](/assets/img/blogs/2021-07-04/003_DedicatedHostsinstances.png)
    
    Instance的类型，根据CPU/Memory/storage/networking capacity/各种flexibility来选择和区分
    
-   ![](/assets/img/blogs/2021-07-04/4_InstanceTypes.png)
+   ![](/assets/img/blogs/2021-07-04/004_InstanceTypes.png)
    
    Launching Instances
    
@@ -55,7 +54,7 @@ permalink: AWS-Solution-Architect-Certification-Notes
         
    Networking
    networking limits (per region or as specified)
-   ![](/assets/img/blogs/2021-07-04/5_EC2Networking.png)
+   ![](/assets/img/blogs/2021-07-04/005_EC2Networking.png)
    
    IP Address
    
@@ -64,7 +63,7 @@ permalink: AWS-Solution-Architect-Certification-Notes
    * Elastic IP: static IP，每个account最多5个IP per region by default
    * You can attach a network interface to an instance in a different subnet as long as its within the same AZ.
     
-   ![](/assets/img/blogs/2021-07-04/6_IPs.png)
+   ![](/assets/img/blogs/2021-07-04/006_IPs.png)
    
    Elastic Network Interfaces(ENI)
    
@@ -148,15 +147,136 @@ permalink: AWS-Solution-Architect-Certification-Notes
    * Server Migration Connector被下载到on-premises vSphere or Hyper-V env.
    
     
-### [Amazon Elastic Container Service (ECS)](https://digitalcloud.training/certification-training/aws-solutions-architect-associate/compute/amazon-ecs/)
+### 1.2 [Amazon Elastic Container Service (ECS)](https://digitalcloud.training/certification-training/aws-solutions-architect-associate/compute/amazon-ecs/)
 
-### [AWS Lambda]()
+   * ECS是high scalable, high performance container management service,对EC2 instances进行容器管理，类似别的容器管理service
+   * ECS同EC2都有security groups, Elastic Load Balancing, EBS volumes and IAM roles等
+   * ECS不用额外cost，只付EC2 instances和EBS volumes的钱，用Elastic Beanstalk来处理ECS和LB 自动缩扩容，监控等，placing your containers across your cluster.
+   * ECS提供Blox，一种容器管理和编排工具
+   
+   ECS(针对docker等) vs EKS(针对K8s)
+   
+   ![](/assets/img/blogs/2021-07-04/007_ECS_EKS.png)
+   
+   Launch Types - ECS的Launch Types决定host时的type of infrastructure，共两种,Amazon EC2（自己搞，只支持EC2 Launch Type）和Amazon Fargate（serverless相关，只支持容器container image）
+   
+   ![](/assets/img/blogs/2021-07-04/008_ECSLaunchTypes.png)
+   
+   ![](/assets/img/blogs/2021-07-04/009_ECSLaunchTypes2.png)
+   
+   ECS相关术语
+   
+   ![](/assets/img/blogs/2021-07-04/010_ECSTerms2.png)
+   
+   Images
+   
+   * 类似Docker的image，只读，从Dockerfile创建，images存储在registry中例如Docker Hub或者AWS Elastic Container Registry(ECR)
+   * 可使用Docker CLI
+   
+   Tasks
+   
+   * ECS上运行Docker容器的任务，一个task可定义一个或多个容器，最多10个
+   * 需要利用ECS来run
+   
+   Clusters
+   
+   * ECS clusters是一个逻辑概念，cluser可以包含tasks using Fargate/EC2的启动类型
+   * clusers are region specific
+   * 同样有IAM roles这些
+   
+   Service Scheduler
+   
+   * Service Scheduler
+   * Custom Scheduler
+   
+   ECS Container Agent
+   
+   * 连接ECS和clusers
+   * container agentzaimeige ECS cluster的infrastructure上运行
+   * 非Linux的instances上需要手动安装ECS agent
+   
+   ECS Auto Scaling
+   
+   Service Auto Scaling
+   * 利用Application Auto Scaling service来自动缩扩容
+   * Target Trackiing Scaling Policies
+   * Step Scaling Policies
+   
+   Cluser Auto Scaling
+   * 2019出来的新功能，SAA-C02肯定有
+   * A Capacity Provider can be associated with an EC2 Auto Scaling Group (ASG)
+        * managed scaling
+        * managed instance termination protection
+   
+   Security/SLA
+   * EC2 通过IAM访问ECS
+   * 安全组等都是在container level上
+   
+   Limits
+   * Default soft limits
+        * Clusters per region = 1000
+        * Instances per region = 1000
+        * Services per region = 500
+   * Hard limits:
+        * 1 LB per service
+        * 1000 tasks per service(desired count)
+        * Max 10 containers per task definition
+        * Max 10 tasks per instance
+        
+   Pricing
+   * EC2 Launch Types - 没有额外费用，只付EC2资源费用包括instances，EBS volumes和LB
+  
+   * Fargate - 需要额外付容器中的vCPU和内存费用
+   
 
-### [Elastic Load Balancing]()
+### 1.3 [AWS Lambda](https://digitalcloud.training/certification-training/aws-solutions-architect-associate/compute/aws-lambda/)
 
-### [AWS Elastic Beanstalk]()
+   AWS Lambda让应用没有provisioning和managing servers(AWS负责)，funtional triggered by events，不能log in到运行lambda的compute instances中去，也不能自定义操作系统和runtime语言
+   
+   Lambda自定义内存，为event驱动，包括Lambda function(custom codes and dependencies), Event Sources(SNS or custom services，用来产生时间trigger lambda function), Downstream resources (DynomoDB or S3), log Streams
+   
+   trigger Lambda的事件包括各种别的services例如s3/DynomoDB/Kinesis Data Steams/Simple Notification Service(SNS)/Simple Email Service 等等等等事件，还可以是on demand，Http requests等，functions之间可以互相trigger；非stream events类似于批处理
+   
+   * Lambda functions支持各种语言，存储在S3 and encrypt it at rest
+   
+   * Continuous scaling – scales out not up, 1 event = 1 function，GLOBALLY运行
+   
+   * 需要在VPC中创建NAT来和外部endpoint交流，每个lambda function都有一个unique Amazon Resource Name(ARN)并且不能修改
+   
+   Building Lambda Apps
+   * 管理工具，AWS Serverless Application Model (AWS SAM)
+   * SAM是个标准，用AWS CloudFormation
+   * 可以用AWS CodePipeline和CodeDeploy来自动化Lambda，追踪则用AWS X-Ray
+   
+   Lambda@Edge
+   * Globally运行代码而无需Provisioning 或者 managed servers，instead使用cloudFront来处理请求和回应
+   
+   Limits
+   * 内存 - 最低128MB，最高3008MB，没64MB为一增量
+   * 瞬时disk容量 - 512MB
+   * file descriptors的数量 - 1024
+   * 进程和线程的数量 - 1024
+   * 每个请求的最大执行数 - 900秒
+   * 每个账户的并发执行数 - 1000
+   
+   Operations and monitoring
+   * 通过CloudWatch，Lambda可以自己检测和report各种metrics
+   * AWS Lambda Console可以看到各种
+   * X-Ray可以看整个上下游
+   * Lambda也整合了CloudTrail用来抓取API calls并deliver logs
+   
+   Charges
+   * prices based on 请求数量，前1M是免费的，然后$0.2没million
+   * 也看duration，用了多久和内存多大等
+   
+    
 
-### [Elastic Block Store (EBS)]()
+### 1.4 [Elastic Load Balancing]()
 
-### [AWS Auto Scaling]()
+### 1.5 [AWS Elastic Beanstalk]()
+
+### 1.6 [Elastic Block Store (EBS)]()
+
+### 1.7 [AWS Auto Scaling]()
+
 
