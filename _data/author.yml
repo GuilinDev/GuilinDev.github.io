@@ -10,21 +10,29 @@ summary:
   description: Technically sophisticated Software Engineer armed with extensive hands-on experience in software development, especially in big data/cloud native, as well as technical project management, troubleshooting and facilitating process improvement initiatives. <br>Experienced with core knowledge of software development – from concept through delivery of next-generation applications and customizable solutions. Specialized in thinking outside the box to find unique solutions to difficult software engineering and web development problems.
 
 workHistory:
+- work5:
+  company: ZoomInfo Technologies, Inc.
+  location: Waltham, Massachusetts
+  title: Software Engineer
+  started: 2021
+  duration: (01/2021 - present)
+  description: Extrac Intelligence for external business including recrutiers to find candidates efficiently and sales teams to analyze their customers.
+
 - work4:
+  company: US Army
+  location: United States
+  title: Dental Specialist
+  started: 2016
+  duration: (04/2016 - present)
+  description: Communicated with clients to deliver quality software products. Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs.
+
+- work3:
   company: Empirix, Inc.
   location: Billerica, Massachusetts
   title: Software Engineer
   started: 2019
-  duration: (02/2019 - Present)
+  duration: (01/2019 - 01/2021)
   description: Worked on core "Klerity" project for cellular network monitoring, to collect terabytes/petabytes big data from network and devices daily, extract real time intelligence for customer experience, performance management and strategic business decision making.
-
-- work3:
-  company: Freelancer
-  location: Malden, Massachusetts
-  title: Freelancer
-  started: 2016
-  duration: (05/2016 - 01/2019)
-  description: Communicated with clients to deliver quality software products. Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs.
 
 - work2:
   company: Kforce, Inc.
@@ -71,7 +79,7 @@ programmingSkills:
   percentage: 80%
 - Python:
   name: Python
-  percentage: 60%
+  percentage: 70%
 - JavaScript:
   name: JavaScript
   percentage: 60%
@@ -80,7 +88,7 @@ programmingSkills:
   percentage: 40%
 - Big Data:
   name: Big Data
-  percentage: 50%
+  percentage: 60%
 - Mobile:
   name: Mobile Development
   percentage: 30%
