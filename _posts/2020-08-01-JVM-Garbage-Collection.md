@@ -10,18 +10,24 @@ permalink: JVM-Gabage-Collection
 ### 1.1 Java SDK
 了解Java SDK的结构
 ![](/assets/img/blogs/2020-08-01/sdk.png)
+
 如上图所示，最底下的一层就是Java Virtual Machine(JVM)，也就是HotSpot。
 
 ### 1.2 JVM逻辑内存模型
 #### 1.2.1 从内存设置的角度看
 ![](/assets/img/blogs/2020-08-01/jvmMemory0.png)
+
 可以分为三个大的类别：堆内存，非堆内存（JDK8以后叫做Metaspace，元空间）和其它。如果再细分一下，如下：
+
 ![](/assets/img/blogs/2020-08-01/jvmMemory1.png)
+
 可以看到，堆内存包含有Young Generation年轻代和Old Generation老年代，元空间中包含有永久带Permannet Generation。
 
 打开安装目录java/bin/jconsole或H我java/bin/jvisualvm，可以查看当前运行的进程的各个内存分区的运行情况
+
 ![](/assets/img/blogs/2020-08-01/jvmMemory2.png)
 ![](/assets/img/blogs/2020-08-01/jvmMemory3.png)
+
 可以看到JVM将内存分为堆和非堆（Metaspace）。那上面图中除了heap和Metaspace，还有个other是什么呢？Other 指的是“直接内存”，如一些（IO/NIO），
 这些 JVM 控制不了（如果线程变多线程栈吃的内存也会变的非常大，不可设置）。
 
@@ -39,16 +45,20 @@ Metaspace 建议不要设置，一般让 JVM 自己启动的时候动态扩容�
 #### 1.2.2 从线程的角度看JVM内存模型
 可以把 JVM 内存结构直接分成线程私有内存和共享主内存。这样就可以很好地理解多线程的很多问题如同步锁、lock、validate 关键字，
 以及 ThreadLocal。
+
 ![](/assets/img/blogs/2020-08-01/jvmMemory4.png)
 
 #### 1.2.3 从JVM运行期的角度看
 可以分为五大部分：方法区、堆、本地方法栈区、PC 计数器、线程栈。PC 计数器和栈、本地方法栈，是随着当前的线程开始而开始，销毁而销毁的。
+
 ![](/assets/img/blogs/2020-08-01/jvmMemory5.png)
 ![](/assets/img/blogs/2020-08-01/jvmMemory6.png)
 
 #### 1.2.4 从垃圾回收的角度看
 ![](/assets/img/blogs/2020-08-01/jvmMemory7.png)
+
 通过 java/bin/jvisualvm
+
 ![](/assets/img/blogs/2020-08-01/jvmMemory8.png)
 
 JVisualVM 可以看得出来：
@@ -89,12 +99,16 @@ Java 语言最显著的特点就是引入了垃圾回收机制，它使 java 程
 JVM垃圾回收采用的是分代收集算法（Generational Collection），下面根据代（generation）来看收集过程：
 1. 新对象被分配在新生代的Eden区
 ![](/assets/img/blogs/2020-08-01/generationalCollection0.png)
+
 2. 当达到回收条件的时候，没有引用的对象不动，有引用的对象被放到新生代的S0 survivor space区
 ![](/assets/img/blogs/2020-08-01/generationalCollection1.png)
+
 3. 回收往复多次，来回在S0 Survivor Space复制几次，并标记对象的年龄
 ![](/assets/img/blogs/2020-08-01/generationalCollection2.png)
+
 4. 比如设置参数```text -xx：MaxTenuringThreshold=9 ```，表示将标记了年龄等于9的对象copy到老年代
 ![](/assets/img/blogs/2020-08-01/generationalCollection3.png)
+
 5. 然后循环此过程，当老年代达到一定值的时候触发老年GC
 
 ### 2.4 垃圾回收算法
@@ -115,6 +129,7 @@ JVM垃圾回收采用的是分代收集算法（Generational Collection），下
 在上面算法的基础上，即把内存区域分为两等分，分别用两个指针 from 和 to 来维护，并且只是用 from 指针指向的内存区域来分配内存（即每次只使用其中一块）。
 当发生垃圾回收时，便把存活的对象复制到 to 指针指向的内存区域中，并且交换 from 指针和 to 指针的内容。
 ![](/assets/img/blogs/2020-08-01/gcAlgorithm1.png)
+
 该算法的优点：
     * 由于是每次都对整个半区进行内存回收，内存分配时不必考虑内存碎片问题；
     * 只要移动堆顶from和to两个指针，按顺序分配内存即可，实现简单，运行高效。
