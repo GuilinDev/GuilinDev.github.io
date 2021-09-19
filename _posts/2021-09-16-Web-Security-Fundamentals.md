@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: 网络攻击基本知识Web-Security-Fundamentals
+permalink: Web-Security-Fundamentals
 ---
 
 ## 1. Cross Site Scripting (XSS)
@@ -160,7 +160,14 @@ select * from user where username='john' and password=‘' or '1'='1’
 
 ![](/assets/img/blogs/2021-09-16/ake0.jpg)
 
-## 6. 防止第三方监听和劫持
+### 6 常见的前后端鉴权方式
+Session-Cookie
+
+Token (JWT, SSO)
+
+OAuth2.0
+
+## 7. 防止第三方监听和劫持
 
 ### HTTPS (SSL/TLS)
 
