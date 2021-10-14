@@ -20,8 +20,7 @@ datatable: true
                     data: payload,
                     columnDefs: [
                         {
-                            targets:-2, // for links
-                            targets:-3,
+                            targets:[2, 3], // for links
                             render: function ( data, type, row, meta ) {
                                 console.log("data: " + data);
                                 console.log("type: " + type);
