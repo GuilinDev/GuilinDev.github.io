@@ -20,8 +20,11 @@ datatable: true
                     data: payload,
                     columnDefs: [
                         {
-                            targets:-2, // Start with the last
+                            targets:-2, // for links
+                            targets:-3,
                             render: function ( data, type, row, meta ) {
+                                console.log("data: " + data);
+                                console.log("type: " + type);
                                 if(type != null){
                                     return '<a href='+data+'>'+data+'</a>';
                                 } else {
