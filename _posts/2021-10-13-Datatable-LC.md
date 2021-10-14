@@ -24,6 +24,7 @@ datatable: true
                             render: function ( data, type, row, meta ) {
                                 console.log("data: " + data);
                                 console.log("type: " + type);
+                                console.log("row[0]: " + row[0]);
                                 if(type != null){
                                     return '<a href='+data+'>'+row[0]+'</a>';
                                 } else {
@@ -43,8 +44,8 @@ datatable: true
                 <tr>
                     <th>#</th>
                     <th>难度</th>
-                    <th class="linkLC">题目链接</th>
-                    <th class="linkLC">题解链接</th>
+                    <th>题目链接</th>
+                    <th>题解链接</th>
                     <th>简单总结</th>
                 </tr>
             </thead>
@@ -52,8 +53,8 @@ datatable: true
                 <tr>
                     <th>#</th>
                     <th>难度</th>
-                    <th class="linkLC">题目链接</th>
-                    <th class="linkLC">题解链接</th>
+                    <th>题目链接</th>
+                    <th>题解链接</th>
                     <th>简单总结</th>
                 </tr>
             </tfoot>
