@@ -16,11 +16,11 @@ datatable: true
         <script type="text/javascript">
             $(document).ready(function() {
                 var payload = [["1", "E", "Two Sum", "Two Sum", "HashMap"],["146", "M", "LRU Cache", "LRU Cache", "1. Hashmap + Double Linkedlist 2. LinkedHashMap"]];
-                var table = $('#lc').DataTable({
+                $('#lc').DataTable({
                     data: payload,
                     columnDefs: [
                         {
-                            // targets:-1, // Start with the last
+                            targets:-2, // Start with the last
                             render: function ( data, type, row, meta ) {
                                 if(type != null){
                                     return '<a href='+data+'>'+data+'</a>';
