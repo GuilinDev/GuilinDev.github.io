@@ -3,7 +3,6 @@ layout: post
 permalink: Datatable-LC
 datatable: true
 ---
-<!DOCTYPE html>
 <html lang="zh">
     <head>
         <meta charset="utf-8" />
@@ -23,7 +22,7 @@ datatable: true
                         {
                             // targets:-1, // Start with the last
                             render: function ( data, type, row, meta ) {
-                                if(type === 'linkLC'){
+                                if(type != null){
                                     return '<a href='+data+'>'+data+'</a>';
                                 } else {
                                     return "";
