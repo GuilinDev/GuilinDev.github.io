@@ -26,7 +26,9 @@ datatable: true
                                 console.log("type: " + type);
                                 console.log("row[0]: " + row[0]);
                                 if(type != null){
-                                    return '<a href='+row[0]+'>'+data+'</a>';
+                                    var theLink = '<a href='+data+'>'+data+'</a>';
+                                    console.log("theLink: " + theLink);
+                                    return theLink;
                                 } else {
                                     return "";
                                 }
