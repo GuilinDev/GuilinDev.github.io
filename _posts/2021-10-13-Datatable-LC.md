@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: Datatable-LC
+datatable: true
 ---
 <table id="sampleTable" class="display">
    <thead>
