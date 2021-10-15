@@ -4,3 +4,4 @@ _drafts
 .idea
 resumecard.iml
 /*.iml
+.jekyll-cache

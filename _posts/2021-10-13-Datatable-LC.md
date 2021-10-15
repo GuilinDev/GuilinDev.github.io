@@ -15,18 +15,19 @@ datatable: true
         <script type="text/javascript" charset="utf8" src="/assets/js/jquery.dataTables.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                var payload = [["1", "E", "Two Sum", "Two Sum", "HashMap"],["146", "M", "LRU Cache", "LRU Cache", "1. Hashmap + Double Linkedlist 2. LinkedHashMap"]];
+                var payload = [
+                    ["0001", "E", "Two Sum", "Two Sum", "HashMap"],
+                    ["0003", "M", "Longest Substring without Repeating Characters", "Longest Substring without Repeating Characters", "滑动窗口"],
+                    ["0146", "M", "LRU Cache", "LRU Cache", "1. Hashmap + Double Linkedlist 2. LinkedHashMap"]
+                    ];
                 $('#lc').DataTable({
                     data: payload,
                     columnDefs: [
                         {
                             targets:[2, 3], // for links
                             render: function ( data, type, row, meta ) {
-                                console.log("data: " + data);
-                                console.log("type: " + type);
-                                console.log("row[0]: " + row[0]);
                                 if(type != null){
-                                    var theLink = '<a href='+data+'>'+data+'</a>';
+                                    var theLink = '<a href='+row[0]+'>'+data+'</a>';
                                     console.log("theLink: " + theLink);
                                     return theLink;
                                 } else {
