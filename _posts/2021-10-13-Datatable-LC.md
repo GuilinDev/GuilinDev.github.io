@@ -16,15 +16,15 @@ datatable: true
         <script type="text/javascript">
             $(document).ready(function() {
                 var payload = [
-                    ["0001", "E", "Two Sum", "Two Sum", "HashMap"],
-                    ["0003", "M", "Longest Substring without Repeating Characters", "Longest Substring without Repeating Characters", "滑动窗口"],
-                    ["0146", "M", "LRU Cache", "LRU Cache", "1. Hashmap + Double Linkedlist 2. LinkedHashMap"]
+                    ["lc0001", "E", "Array", "Two Sum", "HashMap"],
+                    ["lc0003", "M", "String", "Longest Substring without Repeating Characters", "滑动窗口"],
+                    ["lc0146", "M", "Design", "LRU Cache", "1. Hashmap + Double Linkedlist 2. LinkedHashMap"]
                     ];
                 $('#lc').DataTable({
                     data: payload,
                     columnDefs: [
                         {
-                            targets:[2, 3], // for links
+                            targets:[3], // for links
                             render: function ( data, type, row, meta ) {
                                 if(type != null){
                                     var theLink = '<a href='+row[0]+'>'+data+'</a>';
@@ -47,7 +47,7 @@ datatable: true
                 <tr>
                     <th>#</th>
                     <th>难度</th>
-                    <th>题目链接</th>
+                    <th>题目类型</th>
                     <th>题解链接</th>
                     <th>简单总结</th>
                 </tr>
@@ -56,7 +56,7 @@ datatable: true
                 <tr>
                     <th>#</th>
                     <th>难度</th>
-                    <th>题目链接</th>
+                    <th>题目类型</th>
                     <th>题解链接</th>
                     <th>简单总结</th>
                 </tr>
