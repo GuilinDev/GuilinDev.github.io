@@ -18,6 +18,9 @@ datatable: true
                 var payload = [
                     ["lc0001", "E", "Array", "Two Sum", "HashMap"],
                     ["lc0003", "M", "String", "Longest Substring without Repeating Characters", "滑动窗口"],
+                    ["lc0026", "M", "Array", "Remove Duplicates from Sorted Array", ""],
+                    ["lc0027", "M", "Array", "Remove Element", ""],
+                    ["lc0080", "M", "Array", "Remove Duplicates from Sorted Array II", ""],
                     ["lc0146", "M", "Design", "LRU Cache", "1. Hashmap + Double Linkedlist 2. LinkedHashMap"]
                     ];
                 $('#lc').DataTable({
