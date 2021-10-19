@@ -16,7 +16,7 @@ datatable: true
         <script type="text/javascript">
             $(document).ready(function() {
                 var payload = [
-                    ["0001", "E", "Two Sum", "Two Sum", "HashMap"],
+                    ["Web-Security-Fundamentals", "E", "Two Sum", "Two Sum", "HashMap"],
                     ["0003", "M", "Longest Substring without Repeating Characters", "Longest Substring without Repeating Characters", "滑动窗口"],
                     ["0146", "M", "LRU Cache", "LRU Cache", "1. Hashmap + Double Linkedlist 2. LinkedHashMap"]
                     ];
