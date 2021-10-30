@@ -34,8 +34,13 @@ datatable: true
                     ["lc0016", "M", "Array", "3Sum Closest", ""],
                     ["lc0017", "M", "String", "Letter Combinations of a Phone Number", ""],
                     ["lc0018", "M", "Array", "4Sum", ""],
+                    ["lc0019", "M", "LinkedList", "Remove Nth Node From End of List", ""],
                     ["lc0020", "M", "Stack", "Valid Parentheses", ""],
+                    ["lc0021", "M", "LinkedList", "Merge Two Sorted Lists", ""],
                     ["lc0022", "M", "String", "Generate Parentheses", ""],
+                    ["lc0023", "M", "LinkedList", "Merge k Sorted Lists", ""],
+                    ["lc0024", "M", "LinkedList", "Swap Nodes in Pairs", ""],
+                    ["lc0025", "M", "LinkedList", "Reverse Nodes in k-Group", ""],
                     ["lc0026", "M", "Array", "Remove Duplicates from Sorted Array", ""],
                     ["lc0027", "M", "Array", "Remove Element", ""],
                     ["lc0028", "M", "String", "Implement substr", ""],
@@ -64,6 +69,7 @@ datatable: true
                     ["lc0055", "M", "DP, Greedy", "Jump Game", ""],
                     ["lc0056", "M", "Sorting", "Merge Intervals", ""],
                     ["lc0059", "M", "Array", "Spiral Matrix II", ""],
+                    ["lc0061", "M", "LinkedList", "Rotate List", ""],
                     ["lc0062", "M", "DP", "Unique Path", ""],
                     ["lc0063", "M", "DP", "Unique Path II", ""],
                     ["lc0064", "M", "DP", "Minimum Path Sum", ""],
@@ -82,12 +88,16 @@ datatable: true
                     ["lc0079", "M", "Backtracking", "Word Search", ""],
                     ["lc0080", "M", "Array", "Remove Duplicates from Sorted Array II", ""],
                     ["lc0081", "M", "Array", "Search in Rotated Sorted Array II", ""],
+                    ["lc0082", "M", "LinkedList", "Remove Duplicates from Sorted List II", ""],
+                    ["lc0083", "M", "LinkedList", "Remove Duplicates from Sorted List", ""],
                     ["lc0084", "M", "Array", "Largest Rectangle in Histogram", ""],
                     ["lc0085", "M", "Array", "Maximum Rectangle", ""],
+                    ["lc0086", "M", "LinkedList", "Partition List", ""],
                     ["lc0088", "M", "Array", "Merge Sorted Array", ""],
                     ["lc0089", "M", "Backtracking", "Gray Code", ""],
                     ["lc0090", "M", "Backtracking", "Subsets II", ""],
                     ["lc0091", "M", "DP", "Decode Ways", ""],
+                    ["lc0092", "M", "LinkedList", "Reverse Linked List II", ""],
                     ["lc0093", "M", "Backtracking", "Restore IP Addresses", ""],
                     ["lc0098", "M", "DFS, Tree", "Validate Binary Search Tree", ""],
                     ["lc0118", "M", "Array", "Pascal's Triangle", ""],
@@ -103,9 +113,15 @@ datatable: true
                     ["lc0133", "M", "Graph", "Clone Graph", ""],
                     ["lc0134", "M", "Greedy", "Gas Station", ""],
                     ["lc0135", "M", "Greedy", "Candy", ""],
+                    ["lc0138", "M", "LinkedList", "Copy List with Random Pointer", ""],
                     ["lc0139", "M", "DP", "Word Break", ""],
                     ["lc0140", "M", "DP", "Word Break II", ""],
+                    ["lc0141", "M", "LinkedList", "Linked List Cycle", ""],
+                    ["lc0142", "M", "LinkedList", "Linked List Cycle II", ""],
+                    ["lc0143", "M", "LinkedList", "Reorder List", ""],
                     ["lc0146", "M", "Design", "LRU Cache", "1. Hashmap + Double Linkedlist 2. LinkedHashMap"],
+                    ["lc0147", "M", "LinkedList", "Insertion Sort List", ""],
+                    ["lc0148", "M", "LinkedList", "Sort List", ""],
                     ["lc0149", "H", "Math", "Max Point On a Line", ""],
                     ["lc0150", "M", "Stack", "Evaluate Reverse Polish Notation", ""],
                     ["lc0151", "M", "String", "Reverse Words in a String", ""],
@@ -113,6 +129,7 @@ datatable: true
                     ["lc0153", "M", "Array", "Find Minimum in Rotated Sorted Array", ""],
                     ["lc0155", "M", "Stack", "Min Stack", ""],
                     ["lc0159", "M", "Two Pointers", "Longest Substring with At Most Two Distinct Characters", ""],
+                    ["lc0160", "M", "LinkedList", "Intersection of Two Linked Lists", ""],
                     ["lc0162", "M", "Array", "Find Peak Element", ""],
                     ["lc0164", "M", "", "**Maximum Gap**", ""],
                     ["lc0165", "M", "String", "Compare Version Number", ""],
@@ -125,7 +142,9 @@ datatable: true
                     ["lc0189", "M", "Array", "Rotate Array", ""],
                     ["lc0198", "M", "DP", "House Robber", ""],
                     ["lc0199", "M", "Tree, BFS", "Binary Tree Right Side View", ""],
+                    ["lc0203", "M", "LinkedList", "Remove Linked List Elements", ""],
                     ["lc0205", "M", "Hashtable", "Isomorphic Strings", ""],
+                    ["lc0206", "M", "LinkedList", "Reverse Linked List", ""],
                     ["lc0207", "M", "Graph", "Course Schedule", ""],
                     ["lc0208", "M", "Trie", "Implement Trie \(Prefix Tree\)", ""],
                     ["lc0209", "M", "Sliding Window", "Minimize Size SubArray Sum", ""],
@@ -143,6 +162,8 @@ datatable: true
                     ["lc0228", "M", "Array", "Summary Ranges", ""],
                     ["lc0229", "M", "Array", "Majority Element II", ""],
                     ["lc0232", "M", "Stack", "Implement Queue using Stacks", ""],
+                    ["lc0023", "M", "LinkedList", "Delete Note in a Linked List", ""],
+                    ["lc0234", "M", "LinkedList", "Palindrome Linked List", ""],
                     ["lc0238", "M", "Array", "Product of Array Except Self", ""],
                     ["lc0239", "M", "Heap", "Sliding Window Maximum", ""],
                     ["lc0240", "M", "Array", "Search a 2D Matrix II", ""],
@@ -184,6 +205,7 @@ datatable: true
                     ["lc0319", "M", "Math", "Bulb Switcher", ""],
                     ["lc0322", "M", "DP", "Coin Change", ""],
                     ["lc0323", "M", "DFS", "Number of Connected Components in an Undirected Graph", ""],
+                    ["lc0328", "M", "LinkedList", "Odd Even Linked List", ""],
                     ["lc0329", "M", "DP", "Longest Increasing Path in a Matrix", ""],
                     ["lc0336", "M", "Hashtable", "Palindrome Pairs", ""],
                     ["lc0338", "M", "DP", "Counting Bits", ""],
@@ -194,6 +216,7 @@ datatable: true
                     ["lc0346", "M", "Queue", "Moving Average from Data Stream", ""],
                     ["lc0348", "M", "Design", "Design Tic-Tac-Toe", ""],
                     ["lc0355", "M", "Design", "Design Twitter", ""],
+                    ["lc0369", "M", "LinkedList", "Plus One Linked List", ""],
                     ["lc0373", "M", "Heap", "Find K Pairs with Smallest Sums", ""],
                     ["lc0377", "M", "Backtracking", "Combination Sum IV", ""],
                     ["lc0378", "M", "Kth Smallest Element in a Sorted Matrix", ""],
@@ -272,11 +295,11 @@ datatable: true
                             targets:[3], // for links
                             render: function ( data, type, row, meta ) {
                                 if(type != null){
-                                    var theLink = '<a href='+row[0]+'>'+data+'</a>';
+                                    var theLink = '<a href=' +row[0]+ '>' + data+ '</a>';
                                     console.log("theLink: " + theLink);
                                     return theLink;
                                 } else {
-                                    return "";
+                                    return " ";
                                 }
                             }
                         }
