@@ -356,6 +356,7 @@ datatable: true
                     ["lc0929", "M", "String", "Unique Email Address", ""],
                     ["lc0946", "M", "Stack", "Validate Stack Sequence", ""],
                     ["lc0973", "M", "Divide and Conquer", "K Closest Points from Origin", ""],
+                    ["lc0980", "H", "DFS", "Unique Paths III", "确定开始位置和总步长后，类似走迷宫的DFS"],
                     ["lc0986", "M", "Two Pointers", "Interval List Intersections", ""],
                     ["lc0994", "M", "BFS", "Rotting Oranges", ""],
                     ["lc1008", "M", "Tree", "Construct Binary Search Tree from Preorder Traversal", ""],
