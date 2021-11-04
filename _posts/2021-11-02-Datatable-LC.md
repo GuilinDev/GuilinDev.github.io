@@ -371,6 +371,7 @@ datatable: true
                     ["lc1197", "M", "BFS", "Minimum Knight Moves", ""],
                     ["lc1248", "M", "Sliding Window", "Count Number of Nice Subarrays", ""],
                     ["lc1371", "M", "String", "Find the Longest Substring Containing Vowels in Even Counts", ""],
+                    ["lc1396", "M", "Design", "Design Underground System", "两个HashMap"],
                     ["lc1448", "M", "Tree", "Count Good Nodes in Binary Tree", ""],
                     ["lc1457", "M", "Tree", "Pseudo-Palindromic Paths in a Binary Tree", ""],
                     ["lc1644", "M", "Tree", "Lowest Common Ancestor of a Binary Tree II $", ""],
