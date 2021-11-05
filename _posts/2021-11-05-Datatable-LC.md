@@ -290,6 +290,7 @@ datatable: true
                     ["lc0409", "M", "Hashtable", "Longest Palindrome", ""],
                     ["lc0426", "M", "Tree", "Convert Binary Search Tree to Sorted Doubly Linked List", ""],
                     ["lc0436", "M", "Sweep Line", "Find Right Interval", ""],
+                    ["lc0441", "E", "Array", "Arranging Coins", "Binary Search"],
                     ["lc0442", "M", "Array", "Find All Duplicates in an Array", ""],
                     ["lc0445", "M", "LinkedList", "Add Two Numbers II", ""],
                     ["lc0447", "M", "Hashtable", "Number of Boomerangs", ""],
