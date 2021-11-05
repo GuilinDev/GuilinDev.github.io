@@ -60,6 +60,7 @@ datatable: true
                     ["lc0041", "M", "Array", "First Missing Positive", ""],
                     ["lc0042", "M", "Stack", "Trapping Rain Water", ""],
                     ["lc0043", "M", "String", "Multiply Strings", ""],
+                    ["lc0044", "H", "DP", "Wildcard Matching", "二维DP"],
                     ["lc0045", "M", "DP, Greedy", "Jump Game II", ""],
                     ["lc0046", "M", "Backtracking", "Permutations", ""],
                     ["lc0047", "M", "Backtracking", "Permutations II", ""],
