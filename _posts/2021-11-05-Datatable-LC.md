@@ -105,7 +105,7 @@ datatable: true
                     ["lc0093", "M", "Backtracking", "Restore IP Addresses", ""],
                     ["lc0094", "M", "Tree", "Binary Tree Inorder Traversal", ""],
                     ["lc0095", "M", "Tree", "Unique Binary Search Trees II", ""],
-                    ["lc0096", "M", "Tree", "Unique Binary Search Trees", ""],
+                    ["lc0096", "M", "DP, Tree", "Unique Binary Search Trees", "卡塔兰数的DP，两半截相乘的累加"],
                     ["lc0098", "M", "DFS, Tree", "Validate Binary Search Tree", ""],
                     ["lc0099", "M", "Tree", "Recover Binary Search Tree", ""],
                     ["lc0100", "M", "Tree", "Same Tree", ""],
