@@ -369,6 +369,7 @@ datatable: true
                     ["lc1038", "M", "Tree", "Binary Search Tree to Greater Sum Tree", ""],
                     ["lc1046", "M", "Queue", "Last Stone Weight", ""],
                     ["lc1071", "M", "String", "Greatest Common Divisor of Strings", ""],
+                    ["lc1209", "M", "Stack", "Remove All Adjacent Duplicates in String II", "使用栈，计数"],
                     ["lc1143", "M", "DP", "Longest Common Subsequence", ""],
                     ["lc1197", "M", "BFS", "Minimum Knight Moves", ""],
                     ["lc1248", "M", "Sliding Window", "Count Number of Nice Subarrays", ""],
