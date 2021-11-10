@@ -283,12 +283,14 @@ datatable: true
                     ["lc0387", "M", "String", "First Unique Character in a String", ""],
                     ["lc0389", "M", "Hashtable", "Find the Difference", ""],
                     ["lc0392", "M", "DP", "Is Subsequence", ""],
+                    ["lc0394", "M", "Recursion", "Decode String", ""],
                     ["lc0402", "M", "Stack", "Remove k Digits", ""],
                     ["lc0404", "E", "Tree", "Sum of Left Leaves", "如何判断左叶子，传递参数或判断两层"],
                     ["lc0406", "M", "Greedy", "Queue Reconstruction by Height", ""],
                     ["lc0407", "M", "Stack", "Trapping Rain Water II", ""],
                     ["lc0409", "M", "Hashtable", "Longest Palindrome", ""],
                     ["lc0426", "M", "Tree", "Convert Binary Search Tree to Sorted Doubly Linked List", ""],
+                    ["lc0430", "M", "DFS", "Flatten a Multilevel Doubly Linked List", ""],
                     ["lc0436", "M", "Sweep Line", "Find Right Interval", ""],
                     ["lc0441", "E", "Array", "Arranging Coins", "Binary Search"],
                     ["lc0442", "M", "Array", "Find All Duplicates in an Array", ""],
@@ -339,6 +341,7 @@ datatable: true
                     ["lc0704", "M", "Binary Search", "Binary Search", ""],
                     ["lc0717", "M", "Array", "1-bit and 2-bit Characters", ""],
                     ["lc0723", "M", "Two Pointers", "Candy Crush", ""],
+                    ["lc0726", "H", "Hashtable", "Number of Atoms", "排序"],
                     ["lc0727", "M", "DP", "Minimum Window Subsequence", ""],
                     ["lc0743", "M", "Graph", "Network Delay Time", ""],
                     ["lc0760", "M", "Hashtable", "Find Anagram Mappings", ""],
@@ -346,6 +349,7 @@ datatable: true
                     ["lc0771", "M", "Hashtable", "Jewels and Stones", ""],
                     ["lc0776", "M", "Tree", "Split BST", ""],
                     ["lc0779", "M", "Recursion", "K-th Symbol in Grammar", ""],
+                    ["lc0797", "M", "Backtracking", "All Paths From Source to Target", ""],
                     ["lc0804", "M", "String", "Unique Morse Code Words", ""],
                     ["lc0814", "M", "Tree", "Binary Tree Pruning", ""],
                     ["lc0819", "M", "String", "Most Common Word", ""],
@@ -384,8 +388,10 @@ datatable: true
                     ["lc1448", "M", "Tree", "Count Good Nodes in Binary Tree", ""],
                     ["lc1457", "M", "Tree", "Pseudo-Palindromic Paths in a Binary Tree", ""],
                     ["lc1472", "M", "Design", "Design Browser History", "Double LinkedList"],
+                    ["lc1583", "M", "Array", "Count Unhappy Friends", "二维Array直接模拟"],
                     ["lc1644", "M", "Tree", "Lowest Common Ancestor of a Binary Tree II $", ""],
-                    ["lc1650", "M", "Tree", "Lowest Common Ancestor of a Binary Tree III $", ""]
+                    ["lc1650", "M", "Tree", "Lowest Common Ancestor of a Binary Tree III $", ""],
+                    ["lc1656", "E", "Design", "Design an Ordered Stream", "用Array"]
                     ];
                 $('#lc').DataTable({
                     data: payload,
