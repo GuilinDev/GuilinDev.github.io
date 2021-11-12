@@ -82,6 +82,7 @@ datatable: true
                     ["lc0065", "M", "String", "Valid Number", ""],
                     ["lc0066", "M", "Array", "Plus One", ""],
                     ["lc0067", "M", "String", "Add Binary", ""],
+                    ["lc0068", "H", "String", "Text Justification", "分首行末行和普通行模拟"],
                     ["lc0069", "M", "Binary Search", "Sqrt\(x\)", ""],
                     ["lc0070", "M", "DP", "Climb Stairs", ""],
                     ["lc0072", "M", "DP", "Edit Distance", ""],
