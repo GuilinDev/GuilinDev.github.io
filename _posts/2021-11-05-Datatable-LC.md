@@ -467,6 +467,7 @@ datatable: true
                     ["lc1650", "M", "Tree", "Lowest Common Ancestor of a Binary Tree III $", ""],
                     ["lc1656", "E", "Design", "Design an Ordered Stream", "用Array"],
                     ["lc1696", "M", "DP, Sliding Windows", "Jump Game VI", ""],
+                    ["lc1822", "E", "Array", "Sign of the Product of an Array", ""],
                     ["lc1823", "M", "Array", "Find the Winner of the Circular Game", ""],
                     ["lc1865", "M", "Design", "Finding Pairs With a Certain Sum", ""],
                     ["lc1884", "M", "DP", "Egg Drop With 2 Eggs and N Floors", ""],
