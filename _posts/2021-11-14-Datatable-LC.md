@@ -370,6 +370,7 @@ datatable: true
                     ["lc0436", "M", "Sweep Line", "Find Right Interval", ""],
                     ["lc0437", "M", "Tree", "Path Sum III", "树的preSum"],
                     ["lc0438", "M", "String", "Find All Anagrams in a String", ""],
+                    ["lc0440", "H", "Trie", "K-th Smallest in Lexicographical Order", "二元树"],
                     ["lc0441", "E", "Array", "Arranging Coins", "Binary Search"],
                     ["lc0442", "M", "Array", "Find All Duplicates in an Array", ""],
                     ["lc0443", "M", "String", "String Compression", ""],
