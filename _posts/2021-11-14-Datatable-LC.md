@@ -545,6 +545,7 @@ datatable: true
                     ["lc1074", "H", "Array", "Number of Submatrices That Sum to Target", "二维数组前缀和"],
                     ["lc1081", "M", "String", "Smallest Subsequence of Distinct Characters", "同316"],
                     ["lc1089", "E", "Array", "Duplicate Zeros", ""],
+                    ["lc1091", "M", "BFS", "Shortest Path in Binary Matrix", ""],
                     ["lc1094", "M", "Array", "Brace Expansion II", "PQ或仅Array"],
                     ["lc1096", "H", "DFS, BFS", "Brace Expansion II", ""],
                     ["lc1143", "M", "DP", "Longest Common Subsequence", ""],
