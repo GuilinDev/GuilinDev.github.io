@@ -36,7 +36,7 @@ shcema:
 
 	Product: productID, categoryID, price, timestamp;
 	
-	Price: ID, productID, Array{{price1, time1},{price2, time2},{price3, time3}...}
+	Price: ID, productID, Array{ {price1, time1},{price2, time2},{price3, time3}...}
 	
 	Category: ID, categoryNames....
 	
