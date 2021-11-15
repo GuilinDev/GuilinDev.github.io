@@ -4,31 +4,98 @@ permalink: python-contents
 ---
 
 @[toc]
-# 1.标题1
-## (1) 小标题1
-## (2) 小标题2
-# 2.标题2
-## (1) 小标题3
-## (2) 小标题4 
+# 1.从Python开始
+## (1) 环境
+## (2) Anaconda
 
-What is programming?
-Installing Python
-Getting started with Python
-ThinkPython: The way of the program
-Variables, Booleans and None
-Using functions
-Setting up an editor
-If, else and elif
-Handy stuff with strings
-Lists and tuples
-Loops
-Trey Hunner: zip and enumerate
-Dictionaries
-Defining functions
-Writing a larger program
-What is true?
-Files
-Modules
-Exceptions
-Classes
-Docstrings
+# 2.认识编程
+## (1) 非IT人学习Python
+## (2) 如何学习
+
+# 3.项目1
+## (1) 创建一个全国山脉分布图
+## (2) 总结
+
+# 4.编程的原料 - 变量和函数
+## (1) 变量
+
+变量（Variables）很容易理解，它们可以理解成指向存储在内存中的值的标识
+```text
+>>> a = 1   # 创建一个变量，成为a，它指向1
+>>> b = 2   # 创建另一个变量b
+>>> a       # 获取a这个标识指向存储在内存中的值
+1
+>>> b
+2
+>>>
+```
+
+上面的过程可以画成以下图形
+
+![](/assets/img/blogs/pythonContents/chapter02_variable_0.png)
+
+在我们赋予变量后我们也可以重新设置该变量
+
+```text
+>>> a = 2    # 将本来指向1的变量指向2
+>>> a
+2
+>>>
+```
+
+对应的图
+![](/assets/img/blogs/pythonContents/chapter02_variable_1.png)
+
+### 对比符
+
+### Booleans
+
+### None
+
+### 总结
+
+## (2) 函数
+### (1) 认识函数
+### (2) 返回值
+### (3) print和一些内置的东西
+### (4) 自定义函数
+### (5) 局部和全局
+### (6) 输入和初始值
+### (7) 一些常见问题
+
+# 5.编程的原料 - 列表，元组和字典
+## (1) 小标题列表
+## (2) 元组
+## (3) 字典
+
+# 6.项目2
+## (1) 利用pygame制作游戏
+## (2) 总结
+
+# 7.编程的骨架 - 条件和循环
+## (1) 判断条件
+## (2) 循环
+## (3) 递归
+
+# 8.函数，类和模块
+## (1) 更多的函数
+## (2) 类
+## (3) 模块
+
+# 9.项目3
+## (1) 制作一个价格追踪器
+## (2) 总结
+
+# 10.程序和外界的交互 - 文件，数据库和网络
+## (1) 文件的读写
+## (2) 与数据库交互
+## (3) 与网络的交互
+## (4) 更多
+
+# 11.扩展
+## (1) 异常处理
+## (2) 常用的数据结构和算法
+
+# 12.项目4
+## (1) 构建自动驾驶监测服务
+## (2) 总结
