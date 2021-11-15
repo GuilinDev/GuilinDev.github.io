@@ -3,7 +3,6 @@ layout: post
 permalink: python-contents
 ---
 
-@[toc]
 # 1.从Python开始
 ## (1) 环境
 ## (2) Anaconda
@@ -44,6 +43,7 @@ permalink: python-contents
 ```
 
 对应的图
+
 ![](/assets/img/blogs/pythonContents/chapter02_variable_1.png)
 
 ### 对比符
