@@ -447,6 +447,7 @@ datatable: true
                     ["lc0654", "M", "Tree", "Maximum Binary Tree", ""],
                     ["lc0657", "M", "String", "Judge Route Cycle", ""],
                     ["lc0658", "M", "Array", "Find K Closest Elements", ""],
+                    ["lc0662", "M", "Tree", "Maximum Width of Binary Tree", ""],
                     ["lc0669", "M", "Tree", "Trim a Binary Search Tree", ""],
                     ["lc0674", "M", "DP", "Longest Continuous Increasing Subsequence", ""],
                     ["lc0678", "H", "Stacks", "Valid Parenthesis String", ""],
