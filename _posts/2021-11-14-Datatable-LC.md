@@ -398,7 +398,6 @@ datatable: true
                     ["lc0493", "H", "Array", "Reverse Pairs", "Merge Sort"],
                     ["lc0498", "M", "Array", "Diagonal Traverse", ""],
                     ["lc0499", "H", "BFS", "The Maze III", ""],
-                    ["lc0499", "H", "BFS", "The Maze III", ""],
                     ["lc0500", "M", "Hashtable", "Keyboard Row", ""],
                     ["lc0503", "M", "Array", "Next Greater Element II", ""],
                     ["lc0505", "M", "BFS", "The Maze II", ""],
@@ -628,7 +627,8 @@ datatable: true
                     ["lc1929", "E", "Array", "Concatenation of Array", ""],
                     ["lc1953", "M", "Design", "Maximum Number of Weeks for Which You Can Work", "贪心"],
                     ["lc1971", "E", "Graph", "Find if Path Exists in Graph", ""],
-                    ["lc2007", "M", "Array, Sorting", "Find if Path Exists in Graph", "数组中的元素二倍后打乱后，还原"]
+                    ["lc2007", "M", "Array, Sorting", "Find if Path Exists in Graph", "数组中的元素二倍后打乱后，还原"],
+                    ["lc2061", "M", "Array", "Number of Spaces Cleaning Robot Cleaned", ""]
                     ];
                 $('#lc').DataTable({
                     data: payload,
