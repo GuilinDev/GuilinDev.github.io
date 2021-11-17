@@ -574,6 +574,7 @@ datatable: true
                     ["lc1281", "E", "Math", "Subtract the Product and Sum of Digits of an Integer", ""],
                     ["lc1282", "M", "Hashtable", "Group the People Given the Group Size They Belong To", ""],
                     ["lc1286", "M", "Design", "Iterator for Combination", "逆序检查，顺序推进"],
+                    ["lc1304", "E", "Array", "Find N Unique Integers Sum up to Zero", ""],
                     ["lc1312", "H", "DP", "Minimum Insertion Steps to Make a String Palindrome", ""],
                     ["lc1329", "M", "Array", "Sort the Matrix Diagonally", ""],
                     ["lc1332", "E", "String", "Remove Palindromic Subsequences", ""],
