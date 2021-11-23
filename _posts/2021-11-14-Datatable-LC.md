@@ -495,6 +495,7 @@ datatable: true
                     ["lc0804", "M", "String", "Unique Morse Code Words", ""],
                     ["lc0814", "M", "Tree", "Binary Tree Pruning", ""],
                     ["lc0819", "M", "String", "Most Common Word", ""],
+                    ["lc0829", "H", "Math", "Consecutive Numbers Sum", "等差数列公式, log(n)"],
                     ["lc0833", "M", "String", "Find And Replace in String", "用新的若干长度字母组替换原来的字母组"],
                     ["lc0836", "E", "Math", "Rectangle Overlap", ""],
                     ["lc0838", "M", "Two Pointers, DP", "Push Dominoes", ""],
