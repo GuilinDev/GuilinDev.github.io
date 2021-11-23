@@ -514,6 +514,7 @@ datatable: true
                     ["lc0912", "M", "Sort", "Sort Array", ""],
                     ["lc0915", "M", "Array", "Partition Array into Disjoint Intervals", ""],
                     ["lc0917", "E", "String", "Reverse Only Letters", ""],
+                    ["lc0921", "M", "String, Stack", "Minimum Add to Make Parentheses Valid", "栈或者计数"],
                     ["lc0929", "M", "String", "Unique Email Address", ""],
                     ["lc0934", "M", "Array", "Shortest Bridge", "同时用DFS+BFS"],
                     ["lc0935", "M", "DP", "Knight Dialer", ""],
