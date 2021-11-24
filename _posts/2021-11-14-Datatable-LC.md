@@ -551,6 +551,7 @@ datatable: true
                     ["lc1091", "M", "BFS", "Shortest Path in Binary Matrix", ""],
                     ["lc1094", "M", "Array", "Brace Expansion II", "PQ或仅Array"],
                     ["lc1096", "H", "DFS, BFS", "Brace Expansion II", ""],
+                    ["lc1137", "E", "DP", "N-th Tribonacci Number", ""],
                     ["lc1143", "M", "DP", "Longest Common Subsequence", ""],
                     ["lc1146", "M", "Array", "Snapshot Array", ""],
                     ["lc1155", "M", "DP", "Number of Dice Rolls With Target Sum", ""],
