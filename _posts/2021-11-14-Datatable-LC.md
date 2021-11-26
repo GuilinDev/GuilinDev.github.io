@@ -364,6 +364,7 @@ datatable: true
                     ["lc0420", "H", "String", "Partition Equal Subset Sum", ""],
                     ["lc0424", "M", "String", "Longest Repeating Character Replacement", ""],
                     ["lc0426", "M", "Tree", "Convert Binary Search Tree to Sorted Doubly Linked List", ""],
+                    ["lc0427", "M", "DFS", "Construct Quad Tree", ""],
                     ["lc0428", "H", "DFS, BFS", "Serialize and Deserialize N-ary Tree", ""],
                     ["lc0429", "M", "Tree, BFS", "N-ary Tree Level Order Traversal", ""],
                     ["lc0430", "M", "DFS", "Flatten a Multilevel Doubly Linked List", ""],
