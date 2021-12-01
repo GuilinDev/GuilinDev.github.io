@@ -536,6 +536,7 @@ datatable: true
                     ["lc1010", "M", "HashTable", "Pairs of Songs With Total Durations Divisible by 60 ", ""],
                     ["lc1011", "M", "Binary Search", "Capacity To Ship Packages Within D Days", ""],
                     ["lc1013", "M", "Array", "Partition Array Into Three Parts With Equal Sum", ""],
+                    ["lc1014", "M", "DP", "Best Sightseeing Pair", ""],
                     ["lc1019", "M", "LinkedList", "Next Greater Node In Linked List", ""],
                     ["lc1025", "E", "Math, DP", "Divisor Game", ""],
                     ["lc1026", "M", "Tree", "Maximum Difference Between Node and Ancestor", ""],
