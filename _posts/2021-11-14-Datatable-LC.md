@@ -468,6 +468,7 @@ datatable: true
                     ["lc0707", "M", "LinkedList", "Design Linked List", ""],
                     ["lc0708", "M", "LinkedList", "Insert into a Sorted Circular Linked List", ""],
                     ["lc0713", "M", "Array", "Subarray Product Less Than K", "双指针"],
+                    ["lc0714", "M", "DP", "Best Time to Buy and Sell Stock with Transaction Fee", ""],
                     ["lc0716", "E", "Stack", "Max Stack", ""],
                     ["lc0717", "M", "Array", "1-bit and 2-bit Characters", ""],
                     ["lc0721", "M", "DFS", "Accounts Merge", ""],
