@@ -358,6 +358,7 @@ datatable: true
                     ["lc0407", "M", "Stack", "Trapping Rain Water II", ""],
                     ["lc0409", "M", "Hashtable", "Longest Palindrome", ""],
                     ["lc0412", "E", "Array", "Fizz Buzz", ""],
+                    ["lc0413", "M", "DP", "Arithmetic Slices", ""],
                     ["lc0415", "E", "String", "Add Strings", "非负，从后向前"],
                     ["lc0416", "M", "DP", "Partition Equal Subset Sum", ""],
                     ["lc0417", "M", "BFS, DFS", "Pacific Atlantic Water Flow", ""],
