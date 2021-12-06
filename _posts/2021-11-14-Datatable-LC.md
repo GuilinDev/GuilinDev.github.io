@@ -520,6 +520,7 @@ datatable: true
                     ["lc0918", "M", "DP", "Maximum Sum Circular Subarray", ""],
                     ["lc0921", "M", "String, Stack", "Minimum Add to Make Parentheses Valid", "栈或者计数"],
                     ["lc0929", "M", "String", "Unique Email Address", ""],
+                    ["lc0931", "M", "DP", "Minimum Falling Path Sum", "二维DP"],
                     ["lc0934", "M", "Array", "Shortest Bridge", "同时用DFS+BFS"],
                     ["lc0935", "M", "DP", "Knight Dialer", ""],
                     ["lc0939", "M", "Math", "Minimum Area Rectangle", "给一组点的坐标组成最小的矩形"],
