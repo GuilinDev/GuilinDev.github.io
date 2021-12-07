@@ -585,6 +585,7 @@ datatable: true
                     ["lc1286", "M", "Design", "Iterator for Combination", "逆序检查，顺序推进"],
                     ["lc1304", "E", "Array", "Find N Unique Integers Sum up to Zero", ""],
                     ["lc1312", "H", "DP", "Minimum Insertion Steps to Make a String Palindrome", ""],
+                    ["lc1314", "M", "DP", "Matrix Block Sum", "矩阵的区域和，新的矩阵的每个元素都满足一定条件"],
                     ["lc1329", "M", "Array", "Sort the Matrix Diagonally", ""],
                     ["lc1332", "E", "String", "Remove Palindromic Subsequences", ""],
                     ["lc1344", "M", "Math", "Angle Between Hands of a Clock", ""],
