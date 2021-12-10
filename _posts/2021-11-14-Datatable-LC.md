@@ -490,6 +490,7 @@ datatable: true
                     ["lc0721", "M", "DFS", "Accounts Merge", ""],
                     ["lc0722", "M", "String", "Remove Comments ", ""],
                     ["lc0723", "M", "Two Pointers", "Candy Crush", ""],
+                    ["lc0724", "E", "Array", "Find Pivot Index", "左右两边和相同的元素下标"],
                     ["lc0726", "H", "Hashtable", "Number of Atoms", "排序"],
                     ["lc0727", "M", "DP", "Minimum Window Subsequence", ""],
                     ["lc0731", "M", "Hashtable", "My Calendar II", "TreeMap"],
