@@ -228,7 +228,7 @@ datatable: true
                     ["lc0208", "M", "Trie", "Implement Trie \(Prefix Tree\)", ""],
                     ["lc0209", "M", "Sliding Window", "Minimize Size SubArray Sum", ""],
                     ["lc0210", "M", "Graph", "Course Schedule II", ""],
-                    ["lc0211", "M", "Trie", "Add and Search Word - Data Structure Design", ""],
+                    ["lc0211", "M", "Trie", "Design Add and Search Words Data Structure", ""],
                     ["lc0212", "M", "Trie", "Word Search II", ""],
                     ["lc0213", "M", "DP", "House Robber II", ""],
                     ["lc0214", "H", "String", "Shortest Palindrome", "添加字符使原字符是回文"],
