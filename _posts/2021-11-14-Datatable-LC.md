@@ -615,6 +615,7 @@ datatable: true
                     ["lc1347", "M", "String", "Minimum Number of Steps to Make Two Strings Anagram", ""],
                     ["lc1348", "M", "Design", "Tweet Counts Per Frequency", "Treemap"],
                     ["lc1351", "M", "Array", "Count Negative Numbers in a Sorted Matrix", "Binary Search"],
+                    ["lc1353", "M", "Greedy", "Maximum Number of Events That Can Be Attended", "最小堆"],
                     ["lc1359", "M", "Math", "Count All Valid Pickup and Delivery Options", ""],
                     ["lc1371", "M", "String", "Find the Longest Substring Containing Vowels in Even Counts", ""],
                     ["lc1372", "M", "Tree, DP", "Longest ZigZag Path in a Binary Tree", ""],
