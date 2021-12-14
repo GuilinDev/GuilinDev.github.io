@@ -326,6 +326,7 @@ datatable: true
                     ["lc0339", "M", "DFS", "Nested List Weight Sum", ""],
                     ["lc0340", "M", "Hashtable", "Longest Substring with At Most K Distinct Characters", "Sliding Window"],
                     ["lc0341", "M", "Stack", "Flatten Nested List Iterator", ""],
+                    ["lc0343", "M", "DP", "Integer Break", ""],
                     ["lc0344", "M", "String", "Reverse String", ""],
                     ["lc0345", "M", "String", "Reverse Vowels of a String", ""],
                     ["lc0346", "M", "Queue", "Moving Average from Data Stream", ""],
