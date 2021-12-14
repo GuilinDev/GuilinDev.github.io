@@ -443,6 +443,7 @@ datatable: true
                     ["lc0572", "E", "Tree", "Subtree of Another Tree", ""],
                     ["lc0581", "M", "Array", "Shortest Unsorted Continuous Subarray", ""],
                     ["lc0582", "M", "Hashtable", "Kill Process", "BFS DFS"],
+                    ["lc0585", "M", "SQL", "Investments in 2016", ""],
                     ["lc0588", "H", "Design", "Design In-Memory File System", ""],
                     ["lc0589", "E", "Tree", "N-ary Tree Preorder Traversal", ""],
                     ["lc0605", "M", "Array", "Can Place Flowers", ""],
