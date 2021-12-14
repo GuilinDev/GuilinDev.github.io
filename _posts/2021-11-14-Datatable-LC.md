@@ -581,6 +581,7 @@ datatable: true
                     ["lc1137", "E", "DP", "N-th Tribonacci Number", ""],
                     ["lc1143", "M", "DP", "Longest Common Subsequence", ""],
                     ["lc1146", "M", "Array", "Snapshot Array", ""],
+                    ["lc1151", "M", "Sliding Window", "Minimum Swaps to Group All 1's Together", ""],
                     ["lc1155", "M", "DP", "Number of Dice Rolls With Target Sum", ""],
                     ["lc1161", "M", "Tree, BFS", "Maximum Level Sum of a Binary Tree", ""],
                     ["lc1169", "M", "Hashtable", "Invalid Transactions", ""],
