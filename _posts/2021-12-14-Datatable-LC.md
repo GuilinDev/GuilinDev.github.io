@@ -535,6 +535,7 @@ datatable: true
                     ["lc0887", "H", "DP", "Super Egg Drop", ""],
                     ["lc0889", "M", "Tree", "Construct Binary from Preorder and Postorder Traversal", ""],
                     ["lc0895", "H", "Design", "Maximum Frequency Stack", ""],
+                    ["lc0901", "M", "Stack", "Online Stock Span", "单调栈，类似739"],
                     ["lc0904", "M", "Two Pointers", "Fruits Into Basket", ""],
                     ["lc0912", "M", "Sort", "Sort Array", ""],
                     ["lc0915", "M", "Array", "Partition Array into Disjoint Intervals", ""],
