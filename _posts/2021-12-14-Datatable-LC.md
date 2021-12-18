@@ -644,6 +644,7 @@ datatable: true
                     ["lc1405", "M", "Greedy", "Longest Happy String", ""],
                     ["lc1413", "E", "Array", "Minimum Value to Get Positive Step by Step Sum", "前缀和"],
                     ["lc1424", "M", "Array", "Diagonal Traverse II", "跟498比较，这个题是全部向右上"],
+                    ["lc1428", "M", "Binary Search", "Leftmost Column with at Least a One", "将二维数组转换为一维来处理，然后二分"],
                     ["lc1439", "H", "Binary Search", "Find the Kth Smallest Sum of a Matrix With Sorted Rows", ""],
                     ["lc1448", "M", "Tree", "Count Good Nodes in Binary Tree", ""],
                     ["lc1457", "M", "Tree", "Pseudo-Palindromic Paths in a Binary Tree", ""],
