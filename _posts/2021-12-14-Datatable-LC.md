@@ -610,6 +610,7 @@ datatable: true
                     ["lc1242", "M", "Design", "Web Crawler Multithreaded", ""],
                     ["lc1244", "M", "Design, Hashtable", "Design A Leaderboard", "HashMap, TreeMap"],
                     ["lc1248", "M", "Sliding Window", "Count Number of Nice Subarrays", ""],
+                    ["lc1249", "M", "Stack", "Minimum Remove to Make Valid Parentheses", ""],
                     ["lc1254", "M", "DFS", "Number of Closed Islands", ""],
                     ["lc1268", "M", "String", "Search Suggestions System", ""],
                     ["lc1274", "H", "DFS", "Number of Ships in a Rectangle", "DFS"],
