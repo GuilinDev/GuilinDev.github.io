@@ -435,7 +435,7 @@ datatable: true
                     ["lc0542", "M", "Array", "01 Matrix", "返回每个元素距离最近的0的距离BFS DP"],
                     ["lc0543", "M", "Tree", "Diameter of Binary Tree", ""],
                     ["lc0545", "M", "DFS, Tree", "Boundary of Binary Tree", ""],
-                    ["lc0547", "H", "Design", "Friend Circles", ""],
+                    ["lc0547", "H", "Design", "Friend Circles / Number of Provinces", ""],
                     ["lc0554", "M", "Hashtable", "Brick Wall", ""],
                     ["lc0556", "M", "Math, Two Pointers", "Next Greater Element III", ""],
                     ["lc0557", "M", "String", "Reverse Words in a String III", ""],
