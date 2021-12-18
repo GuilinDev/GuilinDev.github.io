@@ -554,6 +554,7 @@ datatable: true
                     ["lc0939", "M", "Math", "Minimum Area Rectangle", "给一组点的坐标组成最小的矩形"],
                     ["lc0945", "M", "Sort", "Minimum Increment to Make Array Unique", ""],
                     ["lc0946", "M", "Stack", "Validate Stack Sequence", ""],
+                    ["lc0953", "E", "String", "Verifying an Alien Dictionary", "跟269比只是检查顺序"],
                     ["lc0973", "M", "Divide and Conquer", "K Closest Points from Origin", ""],
                     ["lc0979", "M", "Tree, DFS", "Distribute Coins in Binary Tree", ""],
                     ["lc0980", "H", "DFS", "Unique Paths III", "确定开始位置和总步长后，类似走迷宫的DFS"],
