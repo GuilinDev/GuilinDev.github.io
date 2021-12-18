@@ -657,6 +657,7 @@ datatable: true
                     ["lc1509", "M", "Array", "Minimum Difference Between Largest and Smallest Value in Three Moves", "排序或贪心"],
                     ["lc1531", "H", "DP", "String Compression II", ""],
                     ["lc1567", "M", "DP, Greedy", "Maximum Length of Subarray With Positive Product", "同152，维持正负两个数组或值"],
+                    ["lc1570", "M", "Hashtable, Two Pointers", "Matrix Diagonal Sum", ""],
                     ["lc1572", "E", "Array", "Matrix Diagonal Sum", ""],
                     ["lc1576", "E", "String", "Replace All ?'s to Avoid Consecutive Repeating Characters", ""],
                     ["lc1578", "M", "Array", "Minimum Deletion Cost to Avoid Repeating Letters", "Greedy"],
