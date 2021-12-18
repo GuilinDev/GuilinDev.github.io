@@ -276,6 +276,7 @@ datatable: true
                     ["lc0266", "E", "String", "Palindrome Permutation", ""],
                     ["lc0268", "M", "Bit Manipulation", "Missing Number", "1到n之间，非排序，缺失的数"],
                     ["lc0269", "M", "Graph", "Alien Dictionary", ""],
+                    ["lc0270", "E", "Tree", "Closest Binary Search Tree Value", ""],
                     ["lc0271", "M", "String", "Encode and Decode Strings", ""],
                     ["lc0272", "M", "Tree", "Closest Binary Search Tree Value II", ""],
                     ["lc0273", "M", "String", "Integer to English Words", ""],
