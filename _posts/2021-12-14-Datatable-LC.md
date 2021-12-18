@@ -307,6 +307,7 @@ datatable: true
                     ["lc0308", "H", "Design", "Range Sum Query 2D - Mutable", "线段树, Binary Indexed Tree"],
                     ["lc0309", "M", "DP", "Best Time to Buy and Sell Stock with Cooldown", ""],
                     ["lc0310", "M", "Tree", "Minimum Height Trees", "BFS"],
+                    ["lc0311", "M", "Array", "Sparse Matrix Multiplication", "两个稀疏矩阵相乘"],
                     ["lc0312", "M", "DP", "Burst Balloons", ""],
                     ["lc0313", "M", "Math", "Super Ugly Number", ""],
                     ["lc0314", "M", "Tree", "Binary Tree Vertical Order Traversal $", "BFS"],
