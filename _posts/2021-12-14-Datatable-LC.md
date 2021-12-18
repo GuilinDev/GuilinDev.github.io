@@ -475,6 +475,7 @@ datatable: true
                     ["lc0679", "H", "Recursion", "24 Game", ""],
                     ["lc0680", "E", "Two Pointers", "Valid Palindrome II", "可以删掉一个字符的情况下判断回文，不一致的时候尝试删两边"],
                     ["lc0688", "M", "DP", "Knight Probability in Chessboard", ""],
+                    ["lc0689", "H", "DP", "Maximum Sum of 3 Non-Overlapping Subarrays", "找出一个整数数组中，三个不重叠子数组的起点index集合，每个子数组长度为k，使得三个子数组相加的和最大，有多个就按照三个组合的字典序由小到大返回"],
                     ["lc0691", "H", "DP", "Stickers to Spell Word", "背包问题变形"],
                     ["lc0692", "M", "PQ, Quick Select", "Top K Frequent Words", ""],
                     ["lc0694", "M", "DFS, BFS, UF", "Number of Distinct Islands", ""],
