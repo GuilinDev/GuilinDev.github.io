@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: Datatable-LC
+permalink: ddia-notes
 ---
 
 # DDIA Review Notes
