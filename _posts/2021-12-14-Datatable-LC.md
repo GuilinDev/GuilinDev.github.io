@@ -561,6 +561,7 @@ datatable: true
                     ["lc0946", "M", "Stack", "Validate Stack Sequence", ""],
                     ["lc0953", "E", "String", "Verifying an Alien Dictionary", "跟269比只是检查顺序"],
                     ["lc0973", "M", "Divide and Conquer", "K Closest Points from Origin", ""],
+                    ["lc0977", "E", "Array, Two Pointers", "Squares of a Sorted Array", "从右到左build最后的数组"],
                     ["lc0979", "M", "Tree, DFS", "Distribute Coins in Binary Tree", ""],
                     ["lc0980", "H", "DFS", "Unique Paths III", "确定开始位置和总步长后，类似走迷宫的DFS"],
                     ["lc0981", "M", "Hashtable", "Time Based Key-Value Store", ""],
