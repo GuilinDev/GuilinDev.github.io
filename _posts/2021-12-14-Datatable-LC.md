@@ -443,6 +443,7 @@ datatable: true
                     ["lc0560", "M", "Array", "Subarray Sum Equals K", ""],
                     ["lc0561", "M", "Array", "Array Partition I", ""],
                     ["lc0563", "M", "Tree", "Binary Tree Tilt", ""],
+                    ["lc0567", "M", "Sliding Window", "Permutation in String", ""],
                     ["lc0568", "H", "DP", "Maximum Vacation Days", ""],
                     ["lc0572", "E", "Tree", "Subtree of Another Tree", ""],
                     ["lc0581", "M", "Array", "Shortest Unsorted Continuous Subarray", ""],
