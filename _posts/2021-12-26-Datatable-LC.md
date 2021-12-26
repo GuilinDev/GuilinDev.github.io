@@ -626,6 +626,7 @@ datatable: true
                     ["lc1281", "E", "Math", "Subtract the Product and Sum of Digits of an Integer", ""],
                     ["lc1282", "M", "Hashtable", "Group the People Given the Group Size They Belong To", ""],
                     ["lc1286", "M", "Design", "Iterator for Combination", "逆序检查，顺序推进"],
+                    ["lc1293", "H", "BFS", "Shortest Path in a Grid with Obstacles Elimination", ""],
                     ["lc1297", "M", "String", "Maximum Number of Occurrences of a Substring", ""],
                     ["lc1304", "E", "Array", "Find N Unique Integers Sum up to Zero", ""],
                     ["lc1312", "H", "DP", "Minimum Insertion Steps to Make a String Palindrome", ""],
