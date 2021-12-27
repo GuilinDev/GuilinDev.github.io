@@ -15,7 +15,7 @@ so first let's find out is your use case a data intensive use case, do you need 
 Google they are data intensive, they have millions of users coming and using their websites daily, and so to build such a system requires very different skill sets. 
 
 #### 3
-a typical data intensive application looks like this this, typical components in architecture:
+a typical data intensive application looks like this, typical components in architecture:
 
 1) so that we have users here 
 
@@ -71,5 +71,5 @@ helps you to get more people to contribute to your codebase, and regularly reduc
 #### 9
 and then remember there is no one magic solution for building a high scalable system for everyone, there are the systems that we have looked into for what what kind of components go into a data intensive app, and based on your use case your solution will be custom to your needs, so as long as you have good idea about some of these key pillars look into like reliability scalability and maintainability, you will build the right systems and in next all chapters, we are gonna get to becoming the master of building a high scale data intensive application, that can handle millions of users at scale, thanks.
 
-## Chapter 2 - Data Models - Designing Data Intensive applications book review
+## Chapter 2 - Data Models and Query Languages
 
