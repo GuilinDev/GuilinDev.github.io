@@ -2,6 +2,117 @@
 layout: post
 permalink: Topics-Templates
 ---
+选择排序/Cycle Sort让
+
+Quick Sort
+
+```java
+public classQuickSort {
+	public int[] quickSort(int[] array) {
+		if (array == null || array.length <= 1) {
+			return array;
+		}
+		//overloading here
+		quickSort(array, 0, array.length - 1);
+		return array;
+	}
+
+	private void quickSort(int[] array, int left, int right) {
+		//recursion base case
+		if (left >= right) {
+			return;
+		}
+		//find pivot position and do partition
+		int pivotIndex = findPosAndPartition(array, left, right);
+		quickSort(array, left, pivotIndex - 1);
+		quickSort(array, pivotIndex + 1, right);
+	}
+	
+	private int findPosAndPartition(int[] array, int left, int right) {
+		//random.nextInt(k) → [0, k) / random()[0, 1) → [0, 4)
+		Random rn = new Random();
+		int pivot = left + rn.nextInt(right - left + 1); //better
+		int pivotValue = array[pivot];
+		swap(array, pivot, right); //把pivot放在最后
+	
+		int leftI = left;
+		int rightI = right - 1; //array[right] is now the pivot
+		
+		while (left <= right) {
+			if (array[leftI] < pivotValue) {
+				leftI++;
+			} else if (array[rightI] >= pivotValue) {
+				rightI--;
+			} else {
+				swap(array, leftI++, rightI--);
+			}
+		}
+		//因为之前将pivot放在了right的位置，这后要换回来，放到它应该放的位置
+		swap(array, leftI, right); //对调的是值，而不是index
+		return leftI;
+		}
+}
+
+/**
+Time Complexity : O(nlogn) → 最坏的情况下是 n^2
+Space Complexity : O(1) → 原地交换
+*/
+```
+
+Merge Sort
+
+```java
+public class MergeSort {
+	public int[] mergeSort(int[] array) {
+		//corner case
+		if (array == null || array.length <= 1) {
+			return array;
+		}
+		int[] helper = new int[array.length];
+		mergeSort(array, helper, 0, array.length - 1);
+		return array;
+	}
+
+	private void mergeSort(int[] array, int[] helper, int left, int right) {
+		//base case
+		if (left == right) return;
+		int mid = left + (right - left) / 2;
+		//divide
+		mergeSort(array, helper, left, mid);
+		mergeSort(array, helper, mid + 1, right);
+		//merge
+		merge(array, helper, left, mid, right);
+	}
+	
+	private void merge(int[] array, int[] helper, int left, int mid, int right) {
+		for (int i = left, i <= right, i++) {
+			helper[i] = array[i];
+		}
+		int leftIndex = left; 
+		int rightIndex = mid + 1;
+		int cur = left; 
+		while (leftIndex <= mid && rightIndex <= right) {
+			if (helper[leftIndex] < helper[rightIndex]) {
+				array[cur++] = helper[leftIndex++];
+			} else {
+				array[cur++] = helper[rightIndex++];
+			}
+		}
+		while (leftIndex <= mid) {
+			array[cur++] = helper[leftIndex++];
+		}
+		while (rightIndex <= right) {
+			array[cur++] = helper[rightIndex++];
+		}
+	}
+
+/**
+Time Complexity : O(nlogn) 
+Space Complexity : O(n)  需要额外的数组 
+	- 栈空间 O(logN)
+	- 堆空间 O(nlogn) - O(n)
+*/
+```
 
 BFS
 
