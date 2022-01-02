@@ -520,7 +520,7 @@ datatable: true
                     ["lc0776", "M", "Tree", "Split BST", ""],
                     ["lc0779", "M", "Recursion", "K-th Symbol in Grammar", ""],
                     ["lc0780", "H", "Math", "Reaching Points", "反方向辗转相减"],
-                    ["lc0784", "M", "Letter Case Permutation", "46题Permutation的变种，也可BFS"],
+                    ["lc0784", "M", "Letter Case Permutation", "这是46题Permutation的变种，也可BFS"],
                     ["lc0785", "M", "BFS, DFS, Union Find", "Is Graph Bipartite", ""],
                     ["lc0787", "M", "Graph", "Cheapest Flights Within K Stops", "Dijkstra"],
                     ["lc0794", "M", "Hashtable", "Valid Tic-Tac-Toe State", ""],
