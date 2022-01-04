@@ -693,6 +693,7 @@ datatable: true
                     ["lc1683", "E", "SQL", "Invalid Tweets", ""],
                     ["lc1696", "M", "DP, Sliding Windows", "Jump Game VI", ""],
                     ["lc1721", "M", "LinkedList", "Swapping Nodes in a Linked List", ""],
+                    ["lc1743", "M", "Hashtable", "Restore the Array From Adjacent Pairs", "利用相邻元素的二元组restore原始一维数组"],
                     ["lc1751", "H", "DP", "Maximum Number of Events That Can Be Attended II", ""],
                     ["lc1762", "M", "Array, DP", "Buildings With an Ocean View", "从右到左"],
                     ["lc1765", "M", "BFS", "Map of Highest Peak", ""],
