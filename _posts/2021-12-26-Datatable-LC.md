@@ -416,6 +416,7 @@ datatable: true
                     ["lc0498", "M", "Array", "Diagonal Traverse", "矩阵左上右下再右下左上的对角线遍历"],
                     ["lc0499", "H", "BFS", "The Maze III", ""],
                     ["lc0500", "M", "Hashtable", "Keyboard Row", ""],
+                    ["lc0502", "H", "Greedy", "IPO", "贪心 + PriorityQueue"],
                     ["lc0503", "M", "Array", "Next Greater Element II", ""],
                     ["lc0505", "M", "BFS", "The Maze II", ""],
                     ["lc0508", "M", "Tree", "Most Frequent Subtree Sum", ""],
