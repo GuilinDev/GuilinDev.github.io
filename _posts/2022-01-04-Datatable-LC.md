@@ -380,7 +380,7 @@ datatable: true
                     ["lc0416", "M", "DP", "Partition Equal Subset Sum", ""],
                     ["lc0417", "M", "BFS, DFS", "Pacific Atlantic Water Flow", ""],
                     ["lc0418", "M", "String", "Sentence Screen Fitting", ""],
-                    ["lc0420", "H", "String", "Partition Equal Subset Sum", ""],
+                    ["lc0420", "H", "String", "Strong Password Checker", ""],
                     ["lc0424", "M", "String", "Longest Repeating Character Replacement", ""],
                     ["lc0426", "M", "Tree", "Convert Binary Search Tree to Sorted Doubly Linked List", ""],
                     ["lc0427", "M", "DFS", "Construct Quad Tree", ""],
