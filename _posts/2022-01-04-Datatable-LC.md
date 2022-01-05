@@ -480,6 +480,7 @@ datatable: true
                     ["lc0658", "M", "Array", "Find K Closest Elements", ""],
                     ["lc0662", "M", "Tree", "Maximum Width of Binary Tree", ""],
                     ["lc0669", "M", "Tree", "Trim a Binary Search Tree", ""],
+                    ["lc0671", "M", "Tree", "Second Minimum Node In a Binary Tree", ""],
                     ["lc0674", "M", "DP", "Longest Continuous Increasing Subsequence", ""],
                     ["lc0678", "H", "Stacks", "Valid Parenthesis String", "跟20比，星号可以代表左括号或右括号"],
                     ["lc0679", "H", "Recursion", "24 Game", ""],
