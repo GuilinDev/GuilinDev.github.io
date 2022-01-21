@@ -292,7 +292,7 @@ datatable: true
                     ["lc0283", "M", "Array", "Move Zeroes", ""],
                     ["lc0284", "M", "Design", "Peeking Iterator", ""],
                     ["lc0285", "M", "Tree", "Inorder Successor in BST", "这道题输入是root，510则是给个node"],
-                    ["lc0286", "M", "BFS, DFS", "Peeking Iterator", ""],
+                    ["lc0286", "M", "BFS, DFS", "Walls and Gates", ""],
                     ["lc0287", "M", "Array", "Find the Duplicate Number", ""],
                     ["lc0289", "M", "Array", "Game of Life", ""],
                     ["lc0290", "M", "Hashtable", "Word Pattern", ""],
