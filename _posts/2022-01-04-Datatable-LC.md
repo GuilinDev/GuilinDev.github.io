@@ -505,6 +505,7 @@ datatable: true
                     ["lc0669", "M", "Tree", "Trim a Binary Search Tree", ""],
                     ["lc0670", "M", "Math", "Maximum Swap", ""],
                     ["lc0671", "M", "Tree", "Second Minimum Node In a Binary Tree", ""],
+                    ["lc0673", "M", "DP", "Number of Longest Increasing Subsequence", "跟300题LIS比较，这个是返回共有多少个最长的子序列"],
                     ["lc0674", "M", "DP", "Longest Continuous Increasing Subsequence", ""],
                     ["lc0678", "H", "Stacks", "Valid Parenthesis String", "跟20比，星号可以代表左括号或右括号"],
                     ["lc0679", "H", "Recursion", "24 Game", ""],
