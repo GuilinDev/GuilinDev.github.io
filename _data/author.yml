@@ -10,23 +10,23 @@ summary:
   description: Technically sophisticated Software Engineer armed with extensive hands-on experience in software development, especially in big data/cloud native, as well as technical project management, troubleshooting and facilitating process improvement initiatives. <br>Experienced with core knowledge of software development – from concept through delivery of next-generation applications and customizable solutions. Specialized in thinking outside the box to find unique solutions to difficult software engineering and web development problems.
 
 workHistory:
+- work6:
+  company: Workday, Inc.
+  location: Pleasonton, California
+  title: Senior Software Engineer
+  started: 2022
+  duration: (02/2022 - present)
+  description:
+
 - work5:
   company: ZoomInfo Technologies, Inc.
   location: Waltham, Massachusetts
   title: Software Engineer
   started: 2021
-  duration: (01/2021 - present)
+  duration: (01/2021 - 02/2022)
   description: Extrac Intelligence for external business including recrutiers to find candidates efficiently and sales teams to analyze their customers.
 
 - work4:
-  company: US Army
-  location: United States
-  title: Dental Specialist
-  started: 2016
-  duration: (04/2016 - present)
-  description: Communicated with clients to deliver quality software products. Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs.
-
-- work3:
   company: Empirix, Inc.
   location: Billerica, Massachusetts
   title: Software Engineer
@@ -34,10 +34,18 @@ workHistory:
   duration: (01/2019 - 01/2021)
   description: Worked on core "Klerity" project for cellular network monitoring, to collect terabytes/petabytes big data from network and devices daily, extract real time intelligence for customer experience, performance management and strategic business decision making.
 
+- work3:
+  company: Perdonsl Goal Pursuit
+  location: United States
+  title: Dental Specialist
+  started: 2016
+  duration: (04/2016 - 01/2019)
+  description: Communicated with clients to deliver quality software products. Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs.
+
 - work2:
   company: Kforce, Inc.
   location: Multiple locations, USA
-  title: Software Engineer Consultant
+  title: Senior Programmer Consultant
   started: 2015
   duration: (01/2015 - 05/2016)
   description: Engineered project "3rd Party Auto Fill" for Nationwide Insurance at Des Moines, Iowa, and project "Adjustment Credit Tool" for Rackspace Hosting at San Antonio, Texas.
@@ -61,7 +69,7 @@ educationHistory:
 - education2:
   organization: University of Tulsa, Tulsa, Oklahoma
   degree: Master of Science
-  major: 
+  major: Biology
   started: 2008
   duration: (2008 - 2010)
   description:
