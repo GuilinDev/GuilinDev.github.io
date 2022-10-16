@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: CSGO
+---
+
 Click the Pic Below:
 
 [![Watch the video](/assets/videos/csgo.jpg)](/assets/videos/csgo.mp4)

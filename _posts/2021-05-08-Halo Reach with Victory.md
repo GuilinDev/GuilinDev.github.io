@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: Halo-Reach
+---
+
 Click the Pic Below:
 
 [![Watch the video](/assets/videos/halo_reach.jpg)](/assets/videos/halo_reach_victory.mp4)
