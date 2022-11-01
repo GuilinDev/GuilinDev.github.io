@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: RandomPicker
+permalink: Random-Picker-for-English-Study
 datatable: true
 ---
 
@@ -135,5 +135,4 @@ datatable: true
         }
 
     </script>
-    </body>
-</html>
+    
