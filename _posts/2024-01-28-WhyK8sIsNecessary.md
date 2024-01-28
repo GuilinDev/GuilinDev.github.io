@@ -4,7 +4,7 @@ permalink: Why-K8s-Is-Necessary
 datatable: true
 ---
 
-## 为什么Kubernetes已经是程序员必备技能 - 03/28/2023 
+## 为什么Kubernetes已经是程序员必备技能 - 01/28/2024 
 
 DevOps，开发人员兼做运维，已经是趋势，尤其是对于senior职位及以上，开发人员，不管是Java、Python、Golang或其他语言，至少需要掌握K8S的编排、基本概念。 如果能更加深入的了解K8S工作原理，实打实的用K8S为企业解决所面临服务部署问题，则更有可能站稳脚跟。
 
