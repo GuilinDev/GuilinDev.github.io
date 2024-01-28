@@ -12,7 +12,7 @@ summary:
 workHistory:
 - work6:
   company: Workday, Inc.
-  location: Pleasonton, California
+  location: Pleasonton, California, United States
   title: Senior Software Engineer
   started: 2022
   duration: (02/2022 - present)
@@ -20,7 +20,7 @@ workHistory:
 
 - work5:
   company: ZoomInfo Technologies, Inc.
-  location: Waltham, Massachusetts
+  location: Waltham, Massachusetts, United States
   title: Software Engineer
   started: 2021
   duration: (01/2021 - 02/2022)
@@ -28,7 +28,7 @@ workHistory:
 
 - work4:
   company: Empirix, Inc.
-  location: Billerica, Massachusetts
+  location: Billerica, Massachusetts, United States
   title: Software Engineer
   started: 2019
   duration: (01/2019 - 01/2021)
@@ -44,15 +44,15 @@ workHistory:
 
 - work2:
   company: Kforce, Inc.
-  location: Multiple locations, USA
+  location: Multiple locations, United States
   title: Senior Programmer Consultant
   started: 2015
   duration: (01/2015 - 05/2016)
   description: Engineered project "3rd Party Auto Fill" for Nationwide Insurance at Des Moines, Iowa, and project "Adjustment Credit Tool" for Rackspace Hosting at San Antonio, Texas.
 
 - work1:
-  company: Viverae, Inc.
-  location: Dallas, Texas
+  company: Viverae, Inc.,
+  location: Dallas, Texas, United States
   title: Software Engineer
   started: 2012
   duration: (07/2012 - 12/2014)
