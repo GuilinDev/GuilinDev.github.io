@@ -88,6 +88,9 @@ programmingSkills:
 - Python:
   name: Python
   percentage: 70%
+- Python:
+  name: Golang
+  percentage: 60%
 - JavaScript:
   name: JavaScript
   percentage: 60%
