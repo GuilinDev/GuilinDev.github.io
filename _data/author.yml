@@ -62,7 +62,7 @@ educationHistory:
 - education1:
   organization: University of North Texas, Denton, Texas
   degree: Master of Science
-  major: Bioinformatics
+  major: Computational Biology
   started: 2010
   duration: (2010 - 2012)
   description: Specialized in Electrical Engineering
@@ -72,6 +72,13 @@ educationHistory:
   major: Biology
   started: 2008
   duration: (2008 - 2010)
+  description:
+- education3:
+  organization: 中国科学院大学
+  degree: Bachelor of Science
+  major: Bioinformatics
+  started: 2004
+  duration: (2004 - 2008)
   description:
 
 languages:
@@ -100,9 +107,9 @@ programmingSkills:
 - Big Data:
   name: Big Data
   percentage: 60%
+- Cloud:
+  name: Cloud Native
+  percentage: 70%
 - Mobile:
   name: Mobile Development
   percentage: 30%
-- Cloud:
-  name: Cloud
-  percentage: 60%
