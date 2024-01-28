@@ -16,7 +16,7 @@ workHistory:
   title: Senior Software Engineer
   started: 2022
   duration: (02/2022 - present)
-  description:
+  description: Implement and deploy large scale metrics monitoring and alerting systems in Workday community, improve quality of Observability for internal service teams and external customers.
 
 - work5:
   company: ZoomInfo Technologies, Inc.
@@ -24,7 +24,7 @@ workHistory:
   title: Software Engineer
   started: 2021
   duration: (01/2021 - 02/2022)
-  description: Extrac Intelligence for external business including recrutiers to find candidates efficiently and sales teams to analyze their customers.
+  description: Extract Intelligence for external business including recrutiers to find candidates efficiently and sales teams to analyze their customers.
 
 - work4:
   company: Empirix, Inc.
@@ -35,7 +35,7 @@ workHistory:
   description: Worked on core "Klerity" project for cellular network monitoring, to collect terabytes/petabytes big data from network and devices daily, extract real time intelligence for customer experience, performance management and strategic business decision making.
 
 - work3:
-  company: Perdonsl Goal Pursuit
+  company: Personal Goal Pursuit
   location: United States
   title: Dental Specialist
   started: 2016
