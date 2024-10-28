@@ -60,20 +60,27 @@ workHistory:
 
 educationHistory:
 - education1:
+  organization: The George Washington University, Distributed Columbia
+  degree: Doctor of Engineering
+  major: Artificial Intelligence and Machine Learning
+  started: 2026
+  duration: (2021 - 2026)
+  description: Specialized in Electrical Engineering
+- education2:
   organization: University of North Texas, Denton, Texas
   degree: Master of Science
   major: Computational Biology
   started: 2010
   duration: (2010 - 2012)
   description: Specialized in Electrical Engineering
-- education2:
+- education3:
   organization: University of Tulsa, Tulsa, Oklahoma
   degree: Master of Science
   major: Biology
   started: 2008
   duration: (2008 - 2010)
   description:
-- education3:
+- education4:
   organization: 中国科学院大学
   degree: Bachelor of Science
   major: Bioinformatics
