@@ -81,7 +81,7 @@ educationHistory:
   duration: (2008 - 2010)
   description:
 - education4:
-  organization: 中国科学院大学
+  organization: 中国科学院大学, 北京, China
   degree: Bachelor of Science
   major: Bioinformatics
   started: 2004
@@ -101,8 +101,8 @@ programmingSkills:
   percentage: 80%
 - Python:
   name: Python
-  percentage: 70%
-- Python:
+  percentage: 80%
+- Golang:
   name: Golang
   percentage: 60%
 - JavaScript:
