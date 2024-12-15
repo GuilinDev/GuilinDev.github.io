@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 篮球训练重点动作及要点
+title: 刘教练的篮球训练站
 permalink: Basketball-Training
 ---
 
@@ -62,7 +62,7 @@ h1, h2, h3 {
 </style>
 
 <div class="post-content">
-  <h1>篮球训练重点动作及要点</h1>
+  <h1>刘教练拆解训练动作及要点</h1>
   <p>以下训练动作可配合视频观摩和理解。请根据自身水平，逐步提升动作完成质量与速度。</p>
 
   <div class="training-step">
