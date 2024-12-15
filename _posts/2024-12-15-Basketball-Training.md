@@ -59,6 +59,13 @@ h1, h2, h3 {
   border: 2px solid var(--accent-color);
   border-radius: 8px;
 }
+
+.note {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
 </style>
 
 <div class="post-content">
@@ -67,92 +74,120 @@ h1, h2, h3 {
 
   <div class="training-step">
     <h2>1. 原地低运球</h2>
-    <p>要点：五指分开发力，掌心不要触碰球，小臂主要抖动发力。</p>
-    <video src="{{ '/assets/videos/basketball/原地低重心低运球.mp4' | relative_url }}" controls></video>
+    <p>要点：五指分开发力，掌心不要触碰球，小臂主要抖动发力。身体保持微蹲，重心略降低，目视前方而非球本身。</p>
+    <p class="note">补充：练习时左右手交替运球，逐渐提高节奏。</p>
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/原地低重心低运球.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
     <h2>2. 原地高运球</h2>
-    <p>要点：主要肩发力控制，小臂和大臂成九十度发力。</p>
-    <video src="{{ '/assets/videos/basketball/原地直拍运球_原地高运球.mp4' | relative_url }}" controls></video>
+    <p>要点：主要肩发力控制，小臂和大臂成九十度发力。保持上半身直立，不后仰。</p>
+    <p class="note">补充：注意手腕和手指的灵活发力，避免用手掌拍球，提高对球的控制。</p>
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/原地直拍运球_原地高运球.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
     <h2>3. 原地高低切换运球</h2>
-    <p>要点：在运球时切换发力模式，由肩发力过渡到小臂和手指，伴随重心高低起伏的变化。</p>
-    <video src="{{ '/assets/videos/basketball/原地高低切换运球.mp4' | relative_url }}" controls></video>
+    <p>要点：在运球时切换发力模式，由肩发力过渡到小臂和手指，并随重心变化调整脚步和膝盖弯曲度。</p>
+    <p class="note">补充：从慢速到快速练习，感受发力顺序及身体随球变换的协调性。</p>
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/原地高低切换运球.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
     <h2>4. 口袋运球</h2>
-    <p>要点：球压下去的一瞬间，手肘和肩后拉并悬浮，形成“口袋”空间。</p>
-    <video src="{{ '/assets/videos/basketball/口袋运球.mp4' | relative_url }}" controls></video>
+    <p>要点：球压下去瞬间，手肘和肩后拉并悬浮，形成“口袋”空间。</p>
+    <p class="note">补充：先慢动作体会后拉动作，熟悉后再加快节奏，可应用于对抗中为自己创造运球空间。</p>
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/口袋运球.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
     <h2>5. V字运球</h2>
-    <p>要点：推出去拉回来，感受肩部的推拉发力。</p>
-    <video src="{{ '/assets/videos/basketball/原地左右拉球_V字运球.mp4' | relative_url }}" controls></video>
+    <p>要点：推出去、拉回来，感受肩部推拉发力。保持身体稳定，核心收紧。</p>
+    <p class="note">补充：多次连续运球，培养不盯球的习惯，提升对球的触感和节奏感。</p>
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/原地左右拉球_V字运球.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
     <h2>6. 原地胯下运球</h2>
-    <p>要点：体会球在胯下通过的力感，送球过去的同时沉肩下压。</p>
-    <video src="{{ '/assets/videos/basketball/原地胯下运球.mp4' | relative_url }}" controls></video>
+    <p>要点：体会球在胯下通过的触感，送球同时沉肩下压，保持重心稳定。</p>
+    <p class="note">补充：尝试左右脚交替在前，通过反复练习让身体对胯下变向更敏锐。</p>
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/原地胯下运球.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
     <h2>7. 上步跨下</h2>
     <p>要点：上步刺探同时进行跨下压球，力量和节奏同步推进。</p>
-    <!-- 暂无对应视频，留空 -->
+    <p class="note">补充：在突破场景中多练习该动作，以提高面对防守时的摆脱能力。</p>
+    <!-- 暂无视频 -->
   </div>
 
   <div class="training-step">
     <h2>8. 坠步</h2>
     <p>要点：注意下沉重心，感受臀部和双腿同时发力。</p>
-    <video src="{{ '/assets/videos/basketball/原地坠地_口袋运球.mp4' | relative_url }}" controls></video>
-    <!-- 若以后有更合适的视频，请替换 -->
+    <p class="note">补充：可与假动作结合，瞬间下沉为后续进攻动作创造更好机会。</p>
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/原地坠地_口袋运球.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
     <h2>9. 拖曳步运球</h2>
     <p>要点：有小跳的感觉，注意重心起伏，身体放松。</p>
+    <p class="note">补充：练习时可逐步增加移动幅度和速度，以适应实战中快速改变方向的需要。</p>
     <!-- 暂无视频 -->
   </div>
 
   <div class="training-step">
     <h2>10. 右左上步投篮脚步</h2>
-    <p>要点：右左脚步主要用于左手运球合球投篮，合球时注意画圈、沉重心。</p>
+    <p>要点：右左脚步主要用于左手运球合球投篮，合球时注意画圈和沉重心。</p>
+    <p class="note">补充：反复练习合球与投篮的连贯性，提高终结效率。</p>
     <!-- 暂无视频 -->
   </div>
 
   <div class="training-step">
     <h2>11. 左右上步投篮脚步</h2>
-    <p>要点：左右脚步常用于右手运球终结投篮，节奏与重心转换很关键。</p>
+    <p>要点：左右脚步常用于右手运球终结投篮，重心转换与节奏把控很关键。</p>
+    <p class="note">补充：尝试不同速度和方向，让动作更自然流畅。</p>
     <!-- 暂无视频 -->
   </div>
 
   <div class="training-step">
     <h2>12. 开合跳合球投篮</h2>
-    <p>要点：用于训练跳投的稳定性和发力，找到拔起和蹬起的瞬间感受。</p>
+    <p>要点：训练跳投稳定性和发力，找到拔起和蹬起的瞬间。</p>
+    <p class="note">补充：关注空中平衡和手型稳定，培养更快更准的出手节奏。</p>
     <!-- 暂无视频 -->
   </div>
 
   <div class="training-step">
     <h2>13. 交叉步投篮</h2>
     <p>要点：由运球手那只脚蹬地带动身体横向移动，常用于拖曳运球后的左右突袭投篮。</p>
+    <p class="note">补充：对防守者有干扰时，该步法可快速获得更好的投篮角度和空间。</p>
     <!-- 暂无视频 -->
   </div>
 
   <div class="training-step">
     <h2>14. 转身运球</h2>
     <p>要点：若右手运球时，动左脚往右前方迈，同时身体往后转动，右手运球拉转过去。</p>
+    <p class="note">补充：多以慢动作为起点，逐渐加速转身与变向，提升实战中的应变能力。</p>
     <!-- 暂无视频 -->
   </div>
 
   <div class="training-step">
     <h2>15. 上下步</h2>
-    <p>要点：常用于靠近篮筐下的攻击脚步。采用并步双脚同时落地急停，然后任选一脚为轴心脚进行晃动。</p>
+    <p>要点：常用于靠近篮筐下的攻击脚步。并步双脚同时落地急停，然后任选一脚为轴心脚进行晃动。</p>
+    <p class="note">补充：多练习并步急停的平衡感，提升篮下终结时的多变性。</p>
     <!-- 暂无视频 -->
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var videos = document.querySelectorAll('video[preload="metadata"]');
+  videos.forEach(function(video) {
+    video.addEventListener('loadedmetadata', function() {
+      // 尝试将currentTime往后拨0.1秒，有时可强制显示首帧
+      if (video.readyState >= 1) {
+        video.currentTime = 0.1;
+      }
+    });
+  });
+});
+</script>
