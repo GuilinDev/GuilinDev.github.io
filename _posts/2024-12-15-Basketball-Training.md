@@ -132,7 +132,10 @@ h1, h2, h3 {
     <h2>9. 拖曳步运球</h2>
     <p>要点：有小跳的感觉，注意重心起伏，身体放松。</p>
     <p class="note">补充：练习时可逐步增加移动幅度和速度，以适应实战中快速改变方向的需要。</p>
-    <!-- 暂无视频 -->
+    <p>拖拽步运球分解，每次需要原地停顿，停顿的时候运球手的同侧脚要往左前方或右前方去踩，需要交替踩圈</p>
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/拖曳步运球分解.mp4' | relative_url }}" controls></video>
+    <p>拖拽步运球，上面的分解动作熟悉后，加快节奏，但节奏之前需要停顿，球的拉回可以是左右拉回，也可以是往身体方向回拉</p>
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/拖曳步运球.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
@@ -160,7 +163,7 @@ h1, h2, h3 {
     <h2>13. 交叉步投篮</h2>
     <p>要点：由运球手那只脚蹬地带动身体横向移动，常用于拖曳运球后的左右突袭投篮。</p>
     <p class="note">补充：对防守者有干扰时，该步法可快速获得更好的投篮角度和空间。</p>
-    <!-- 暂无视频 -->
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/交叉步分解和运球.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
