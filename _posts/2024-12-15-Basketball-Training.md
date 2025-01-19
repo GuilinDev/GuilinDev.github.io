@@ -142,7 +142,7 @@ h1, h2, h3 {
     <h2>10. 右左上步投篮脚步</h2>
     <p>要点：右左脚步主要用于左手运球合球投篮，合球时注意画圈和沉重心。</p>
     <p class="note">补充：反复练习合球与投篮的连贯性，提高终结效率。</p>
-    <!-- 暂无视频 -->
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/右左上步投篮脚步.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
@@ -156,7 +156,7 @@ h1, h2, h3 {
     <h2>12. 开合跳合球投篮</h2>
     <p>要点：训练跳投稳定性和发力，找到拔起和蹬起的瞬间。</p>
     <p class="note">补充：关注空中平衡和手型稳定，培养更快更准的出手节奏。</p>
-    <!-- 暂无视频 -->
+    <video preload="metadata" playsinline src="{{ '/assets/videos/basketball/开合跳合球投篮.mp4' | relative_url }}" controls></video>
   </div>
 
   <div class="training-step">
