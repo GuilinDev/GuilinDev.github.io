@@ -93,22 +93,26 @@
     async execute() {
       const about = {
         name: 'Guilin Zhang',
-        title: 'Senior Software Engineer',
+        title: 'Principal AI Researcher',
         location: 'San Mateo, CA, USA',
         email: 'GuilinDev@gmail.com',
         github: 'https://github.com/GuilinDev',
         website: 'https://guilindev.github.io',
         languages: ['Mandarin Chinese (Native)', 'English (Fluent)'],
         skills: [
-          'Java/JVM', 'Python', 'JavaScript/TypeScript',
-          'Cloud Native/Kubernetes', 'Big Data',
-          'System Design', 'AI/ML'
+          'AI & ML (PyTorch, TensorFlow, Scikit-learn)',
+          'Reinforcement Learning, NLP (RAG, Agentic Systems)',
+          'MLOps, Explainable AI (XAI)',
+          'Cloud-Native (Kubernetes, Prometheus, Grafana, Kafka)',
+          'Infrastructure (AWS, GCP, Terraform, ArgoCD)',
+          'Go, Java/Spring Boot, Python, PostgreSQL',
+          'Certifications: CKA/CKAD/CKS'
         ],
         currentRole: {
           company: 'Workday, Inc.',
-          title: 'Senior Software Engineer',
+          title: 'Principal AI Researcher',
           since: '02/2022',
-          focus: 'Large scale metrics monitoring and alerting systems, Observability'
+          focus: 'AI research, large scale metrics monitoring and alerting systems, Observability'
         },
         blog: {
           totalPosts: '3000+',

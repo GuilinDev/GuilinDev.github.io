@@ -1,6 +1,6 @@
 # Author settings
 name: Guilin Zhang
-title: Senior Software Engineer
+title: Principal AI Researcher
 address: San Mateo, CA, USA
 email: GuilinDev@gmail.com
 github: GuilinDev
@@ -13,10 +13,10 @@ workHistory:
 - work6:
   company: Workday, Inc.
   location: Pleasonton, California, United States
-  title: Senior Software Engineer
+  title: Principal AI Researcher
   started: 2022
   duration: (02/2022 - present)
-  description: Implement and deploy large scale metrics monitoring and alerting systems in Workday community, improve quality of Observability for internal service teams and external customers.
+  description: Lead AI research initiatives and implement large scale metrics monitoring and alerting systems in Workday community, improve quality of Observability for internal service teams and external customers.
 
 - work5:
   company: ZoomInfo Technologies, Inc.
@@ -96,27 +96,27 @@ languages:
   name: English
   proficiency: Fluent
 programmingSkills:
-- Java:
-  name: Java
+- skill1:
+  name: "AI & ML (PyTorch, TensorFlow, Scikit-learn)"
+  percentage: 90%
+- skill2:
+  name: "Reinforcement Learning & NLP (RAG, Agents)"
+  percentage: 85%
+- skill3:
+  name: "MLOps & Explainable AI (XAI)"
   percentage: 80%
-- Python:
-  name: Python
+- skill4:
+  name: "Cloud-Native (K8s, Prometheus, Grafana, Kafka)"
+  percentage: 85%
+- skill5:
+  name: "Infrastructure (AWS, GCP, Terraform, ArgoCD)"
   percentage: 80%
-- Golang:
-  name: Golang
-  percentage: 60%
-- JavaScript:
-  name: JavaScript
-  percentage: 60%
-- Kotlin:
-  name: Kotlin
-  percentage: 40%
-- Big Data:
-  name: Big Data
-  percentage: 60%
-- Cloud:
-  name: Cloud Native
-  percentage: 70%
-- Mobile:
-  name: Mobile Development
-  percentage: 30%
+- skill6:
+  name: "Languages (Go, Java/Spring Boot, Python)"
+  percentage: 85%
+- skill7:
+  name: "Databases (PostgreSQL)"
+  percentage: 75%
+- skill8:
+  name: "Certifications: CKA / CKAD / CKS"
+  percentage: 100%
